@@ -1,6 +1,6 @@
 import math as math
 
-fp = open("/home/jpsagarm95/Desktop/ml_contest/ML-contest-training/contest_train.csv")
+fp = open("ML-contest-training/contest_train.csv")
 datastore = fp.read()
 fp.close
 
@@ -92,3 +92,16 @@ for i in range(rowsOfLabelTwo):
 		else:
 			labelTwoInputDataNew[i].append(labelTwoInputData[i][j])
 
+fp = open("changedData.csv",'w')
+
+for row in labelOneInputData:
+	for x in row:
+		fp.write(str(x) + ',')
+	fp.write('a\n')
+
+for row in labelTwoInputData:
+	for x in row:
+		fp.write(str(x) + ',')
+	fp.write('b\n')
+
+fp.close()

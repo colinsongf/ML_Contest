@@ -11,3 +11,5 @@ label 		numberOfPoints
 LDA , PCA
 
 4. Will go and find how to use weka for random trees tomorrow
+
+5. Validation set in data and the weights for the classes
