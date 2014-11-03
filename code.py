@@ -1,107 +1,31 @@
-import math as math
+import math
+import numpy as np
 
-fp = open("ML-contest-training/contest_train.csv")
-datastore = fp.read()
-fp.close
+def avg(L):
+	return sum(L)/len(L)
+def choose(x,nan):
+	if x == 'NaN':
+		return nan
+	return float(x)
 
-totalData = []
-totalNumberOfRows = len(datastore.split('\n')) - 1
+totalData = [ [ x.strip() for x in line.split(',') ] for line in open('ML-contest-training/contest_train.csv') ]
+mean = ( [ avg( [ float(totalData[i][j]) for i in range(len(totalData)) if (totalData[i][j] != 'NaN' and int(totalData[i][-1]) == 1) ] ) for j in range(len(totalData[0])-1) ], [ avg( [ float(totalData[i][j]) for i in range(len(totalData)) if (totalData[i][j] != 'NaN' and int(totalData[i][-1]) == 2) ] ) for j in range(len(totalData[0])-1) ] )
+mean[0].append(1)
+mean[1].append(2)
+completedData = np.array([ [ choose(totalData[i][j], mean[int(totalData[i][-1])-1][j]) for j in range(len(totalData[0])) ] for i in range(len(totalData)) ])
 
-temp = datastore.split('\n')
-totalNumberOfColumns = len(temp[0].split(','))
+features = completedData[:, :-1]
+labels = completedData[:, -1]
+class1 = np.array([ datapoint[:-1] for datapoint in completedData if datapoint[-1] == 1 ])
+class2 = np.array([ datapoint[:-1] for datapoint in completedData if datapoint[-1] == 2 ])
 
-for i in range(totalNumberOfRows):
-	totalData.append([])
-	for j in temp[i].split(','):
-		totalData[i].append(float(j))
-
-
-inputData = []
-outputData = []
-for i in range(totalNumberOfRows):
-	inputData.append([])
-	outputData.append(totalData[i][totalNumberOfColumns - 1])
-	for j in range(totalNumberOfColumns - 1):
-		inputData[i].append(totalData[i][j])
-
-oneCounter = 0
-twoCounter = 0
-for i in range(totalNumberOfRows):
-	if outputData[i] == 1:
-		oneCounter = oneCounter + 1
-	elif outputData[i] == 2:
-		twoCounter = twoCounter + 1
-	else:
-		print outputData[i]
-
-labelOneInputData = []
-labelTwoInputData = []
-for i in range (totalNumberOfRows):
-	if outputData[i] == 1:
-		labelOneInputData.append(inputData[i])
-	else:
-		labelTwoInputData.append(inputData[i])
-
-rowsOfLabelOne = len(labelOneInputData)
-rowsOfLabelTwo = len(labelTwoInputData)
-
-
-
-meanFeaturesForLabelOne = []
-for i in range(totalNumberOfColumns - 1):
-	temp = 0
-	counter = 0
-	for j in range(rowsOfLabelOne):
-		if(math.isnan(labelOneInputData[j][i])):
-			counter = counter + 1
-			temp = temp + labelOneInputData[j][i]
-	if(counter != 0):
-		meanFeaturesForLabelOne.append((temp/counter))
-	else:
-		meanFeaturesForLabelOne.append(0)
-
-
-meanFeaturesForLabelTwo = []
-for i in range(totalNumberOfColumns - 1):
-	temp = 0
-	counter = 0
-	for j in range(rowsOfLabelTwo):
-		if(math.isnan(labelTwoInputData[j][i])):
-			counter = counter + 1
-			temp = temp + labelTwoInputData[j][i]
-	if(counter != 0):
-		meanFeaturesForLabelTwo.append((temp/counter))
-	else:
-		meanFeaturesForLabelTwo.append(0)
-
-labelOneInputDataNew = []
-for i in range(rowsOfLabelOne):
-	labelOneInputDataNew.append([])
-	for j in range(totalNumberOfColumns - 1):
-		if(math.isnan(labelOneInputData[i][j])):
-			labelOneInputDataNew[i].append(meanFeaturesForLabelOne)
-		else:
-			labelOneInputDataNew[i].append(labelOneInputData[i][j])
-
-labelTwoInputDataNew = []
-for i in range(rowsOfLabelTwo):
-	labelTwoInputDataNew.append([])
-	for j in range(totalNumberOfColumns - 1):
-		if(math.isnan(labelTwoInputData[i][j])):
-			labelTwoInputDataNew[i].append(meanFeaturesForLabelTwo)
-		else:
-			labelTwoInputDataNew[i].append(labelTwoInputData[i][j])
-
-fp = open("changedData.csv",'w')
-
-for row in labelOneInputData:
+fp = open('completedData.csv','w')
+for row in class1:
 	for x in row:
 		fp.write(str(x) + ',')
-	fp.write('a\n')
-
-for row in labelTwoInputData:
+	fp.write('1\n')
+for row in class2:
 	for x in row:
 		fp.write(str(x) + ',')
-	fp.write('b\n')
-
+	fp.write('2\n')
 fp.close()
