@@ -1,0 +1,13 @@
+1. Handle the missing attributes.
+A total of 4930 attributes are NaN in 1897 x 3500 input values.
+No label is missing.
+
+2. There is a high class imbalance.
+label 		numberOfPoints
+1			700
+2			2800
+
+3. Feature extraction can be done as there are many features
+LDA , PCA
+
+4. Will go and find how to use weka for random trees tomorrow
