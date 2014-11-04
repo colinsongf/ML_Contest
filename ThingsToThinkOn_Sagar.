@@ -1,3 +1,10 @@
+
+4. Will go and find how to use weka for random trees tomorrow
+
+5. Validation set in data 
+
+*******************************************************************************************************************************
+
 1. Handle the missing attributes.
 A total of 4930 attributes are NaN in 1897 x 3500 input values.
 No label is missing.
@@ -7,9 +14,15 @@ label 		numberOfPoints
 1			700
 2			2800
 
+6. the weights for the classes 
+
+
 3. Feature extraction can be done as there are many features
 LDA , PCA
 
-4. Will go and find how to use weka for random trees tomorrow
+missing values
+normalize data
+class weights
+extract features
 
-5. Validation set in data and the weights for the classes
+should we normalize first and then extract and then again normalize or is that the other way around ?
