@@ -25,8 +25,8 @@ print "logistic initialized"
 # clf.fit(data[:,:-1], data[:,-1])
 print "fitted data"
 dict = {}
-dict['a'] = 4
-dict['b'] = 1
+dict[1] = 4
+dict[2] = 1
 maxf = 0
 maxl = 0
 maxscore = 0
@@ -40,7 +40,7 @@ for f in range(1,6):
 			counter = counter + 1
 			newdata = prj.fit_transform([ normdata[i][:] for i in train ],[ data[i][-1] for i in train ])
 			newtestdata = prj.transform([ normdata[i][:] for i in test ])
-			clf = SVC(class_weight = 'auto', kernel = 'poly', degree = f, coef0 = l)
+			clf = SVC(class_weight = dict, kernel = 'poly', degree = f, coef0 = l)
 			clf = clf.fit(newdata, [ data[i][-1] for i in train ])
 			prediction = clf.predict(newtestdata)
 			# pred = []
@@ -49,7 +49,9 @@ for f in range(1,6):
 			# 		pred.append(2)
 			# 	else:
 			# 		pred.append(1)
-			finalscore = finalscore + score.get_score( prediction, [ data[i][-1] for i in test ])
+			xscore = score.get_score( prediction, [ data[i][-1] for i in test ])
+			finalscore = finalscore + xscore
+			print xscore
 			print "done"
 
 		finalscore = finalscore*(1.0)/counter

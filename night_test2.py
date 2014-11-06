@@ -33,7 +33,7 @@ counter = 0
 
 for train, test in skf:
 	counter = counter + 1	
-	clf = GradientBoostingClassifier(warm_start = True, n_estimators = 500)
+	clf = GradientBoostingClassifier(warm_start = True, n_estimators = 1500)
 	clf = clf.fit([ newdata[i][:] for i in train ], [ data[i][-1] for i in train ])
 	prediction = clf.predict([ newdata[i][:] for i in test ])
 	# pred = []
