@@ -9,9 +9,12 @@ print "data done"
 print "logistic initialized"
 # clf.fit(data[:,:-1], data[:,-1])
 print "fitted data"
-skf = StratifiedKFold(data[:,-1], n_folds=5)
+skf = StratifiedKFold(data[:,-1], n_folds=5, shuffle = True)
 output =[]
+counter = 0
+finalscore = 0
 for train, test in skf:
+	counter = counter + 1
 	clf = RandomForestClassifier(n_estimators = 500)
 	clf = clf.fit([ data[i][:-1] for i in train ], [ data[i][-1] for i in train ])
 	prediction = clf.predict([ data[i][:-1] for i in test ])
@@ -27,3 +30,8 @@ for train, test in skf:
 print "out of score"
 for i in output:
 	print i
+	finalscore = finalscore + i
+
+finalscore = finalscore*(1.0)/counter
+
+print finalscore

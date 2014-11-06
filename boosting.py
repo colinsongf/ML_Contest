@@ -28,7 +28,11 @@ print "logistic initialized"
 print "fitted data"
 skf = StratifiedKFold(data[:,-1], n_folds=10, shuffle=True)
 output =[]
+finalscore = 0
+counter = 0
 for train, test in skf:
+	counter = counter + 1
+
 	clf = GradientBoostingClassifier(warm_start = True)
 	clf = clf.fit([ newdata[i][:] for i in train ], [ data[i][-1] for i in train ])
 	prediction = clf.predict([ newdata[i][:] for i in test ])
@@ -38,8 +42,10 @@ for train, test in skf:
 	# 		pred.append(2)
 	# 	else:
 	# 		pred.append(1)
-	print(score.get_score( prediction , [ data[i][-1] for i in test ]))
+	finalscore = finalscore + score.get_score( prediction , [ data[i][-1] for i in test ])
 	print "done"
+finalscore = finalscore * (1.0) / counter
+print finalscore
 # score = cross_val_score(clf, newdata[:,:], data[:,-1], cv = 5, scoring = 'get_score')
 # print "in scores"
 # for i in score:
