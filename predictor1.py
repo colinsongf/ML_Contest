@@ -2,14 +2,14 @@ import numpy as np
 from sklearn.ensemble import GradientBoostingClassifier
 from sklearn.preprocessing import normalize
 
-clf = GradientBoostingClassifier(warm_start = True)
+clf = GradientBoostingClassifier(warm_start = True, n_estimators=500)
 print 'clf created'
 
 trainData = np.array([ [ float(x.strip()) for x in line.split(',') ] for line in open('ML-contest-training/completedData.csv') ])
-train = normalize(trainData)
+train = normalize(trainData[:,:-1])
 print 'train data read'
 
-clf.fit(train[:,:-1], train[:,-1])
+clf.fit(train, trainData[:,-1])
 print 'clf trained'
 
 testData = [ [ float(x.strip()) for x in line.split(',') ] for line in open('completedTestData.csv') ]
