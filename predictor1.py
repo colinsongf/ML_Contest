@@ -2,7 +2,7 @@ import numpy as np
 from sklearn.ensemble import GradientBoostingClassifier
 from sklearn.preprocessing import normalize
 
-clf = GradientBoostingClassifier(warm_start = True, n_estimators=500)
+clf = GradientBoostingClassifier(warm_start = True, n_estimators=1000)
 print 'clf created'
 
 trainData = np.array([ [ float(x.strip()) for x in line.split(',') ] for line in open('ML-contest-training/completedData.csv') ])
