@@ -19,5 +19,6 @@ def get_score(prediction, actual):
 	for (GOT,IS) in zip(prediction, actual):
 		if GOT == negative and IS == GOT:
 			tn += 1
-	score = 1/(1+((tp+tn)*(fp+fn)/(4*tp*tn)))
+	print tp,tn,fp,fn
+	score = (tp*tn)/((tp*tn)+((tp+tn)*(fp+fn)/4))
 	return score

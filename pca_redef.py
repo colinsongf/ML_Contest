@@ -1,4 +1,4 @@
-from sklearn.lda import LDA
+from sklearn.decomposition import PCA
 import numpy as np
 from sklearn.ensemble import RandomForestClassifier
 from sklearn.preprocessing import normalize
@@ -56,7 +56,7 @@ for train, test in skf:
 			labels3.append(1)
 			labels3.append(1)
 
-	prj = LDA()
+	prj = PCA(n_components = 10)
 	newdata = prj.fit_transform([normdata[i][:] for i in trainL ], labels2)#[ labels[i] for i in trainL ])
 	newtestdata = prj.transform([normdata[i][:] for i in testL ])
 	print np.shape(newdata)

@@ -1,0 +1,4 @@
+smote
+weka cost sensitive
+undersampling/over
+gaussian for regularize a data

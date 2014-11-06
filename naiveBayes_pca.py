@@ -14,16 +14,13 @@ data = np.array([ [ float(x) for x in line.split(',') ] for line in open('ML-con
 
 normdata = normalize(data[:,:-1])
 
-# prj = PCA(n_components = 100)
+prj = PCA(n_components = 100)
 # prj = LDA(n_components = 100)
-# newdata = prj.fit_transform(normdata,data[:,-1])
-newdata = normdata
+
 # newdata = normdata
 # for i in range(5):
 # 	print newdata[i]
-print len(newdata)
-print len(newdata[0])
-print np.shape(newdata)
+
 print "data done"
 print "logistic initialized"
 # clf.fit(data[:,:-1], data[:,-1])
@@ -31,9 +28,11 @@ print "fitted data"
 skf = StratifiedKFold(data[:,-1], n_folds=10, shuffle=True)
 output =[]
 for train, test in skf:
+	newdata = prj.fit_transform([ normdata[i][:] for i in train ],[ data[i][-1] for i in train ])
+	newtestdata = prj.transform([ normdata[i][:] for i in test ])
 	clf = GaussianNB()
-	clf = clf.fit([ newdata[i][:] for i in train ], [ data[i][-1] for i in train ])
-	prediction = clf.predict([ newdata[i][:] for i in test ])
+	clf = clf.fit(newdata, [ data[i][-1] for i in train ])
+	prediction = clf.predict(newtestdata)
 	# pred = []
 	# for i in prediction:
 	# 	if(i > 1.5):
