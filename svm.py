@@ -25,14 +25,14 @@ print "logistic initialized"
 # clf.fit(data[:,:-1], data[:,-1])
 print "fitted data"
 dict = {}
-dict[1] = 4
+dict[1] = 3
 dict[2] = 1
 maxf = 0
 maxl = 0
 maxscore = 0
-for f in range(1,6):
-	for l in range(0,6):
-		skf = StratifiedKFold(data[:,-1], n_folds=10, shuffle=True)
+for f in range(3,4):
+	for l in range(4,5):
+		skf = StratifiedKFold(data[:,-1], n_folds=5, shuffle=True)
 		output =[]
 		finalscore = 0
 		counter = 0
@@ -40,7 +40,7 @@ for f in range(1,6):
 			counter = counter + 1
 			newdata = prj.fit_transform([ normdata[i][:] for i in train ],[ data[i][-1] for i in train ])
 			newtestdata = prj.transform([ normdata[i][:] for i in test ])
-			clf = SVC(class_weight = dict, kernel = 'poly', degree = f, coef0 = l)
+			clf = SVC(class_weight = 'auto', kernel = 'rbf', degree = f, gamma = l , C = 3, tol = 0.0001)
 			clf = clf.fit(newdata, [ data[i][-1] for i in train ])
 			prediction = clf.predict(newtestdata)
 			# pred = []
