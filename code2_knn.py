@@ -30,7 +30,9 @@ while len(missingData) > 0:
 	fillingData.append([float(x) for x in missingData[0]])
 	missingData = missingData[1:]
 
+filledData.extend(fillingData)
+
 fp = open('completedTestDataKNN.csv','w')
-for datapoint in completedData:
-	fp.write(','.join(datapoint) + '\n')
+for datapoint in filledData:
+	fp.write(','.join([str(x) for x in datapoint]) + '\n')
 fp.close()
