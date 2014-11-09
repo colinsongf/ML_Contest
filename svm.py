@@ -25,43 +25,36 @@ print "logistic initialized"
 # clf.fit(data[:,:-1], data[:,-1])
 print "fitted data"
 dict = {}
-dict[1] = 3
+dict[1] = 4
 dict[2] = 1
 maxf = 0
 maxl = 0
 maxscore = 0
-for f in range(3,4):
-	for l in range(4,5):
-		skf = StratifiedKFold(data[:,-1], n_folds=5, shuffle=True)
-		output =[]
-		finalscore = 0
-		counter = 0
-		for train, test in skf:
-			counter = counter + 1
-			newdata = prj.fit_transform([ normdata[i][:] for i in train ],[ data[i][-1] for i in train ])
-			newtestdata = prj.transform([ normdata[i][:] for i in test ])
-			clf = SVC(class_weight = 'auto', kernel = 'rbf', degree = f, gamma = l , C = 3, tol = 0.0001)
-			clf = clf.fit(newdata, [ data[i][-1] for i in train ])
-			prediction = clf.predict(newtestdata)
-			# pred = []
-			# for i in prediction:
-			# 	if(i > 1.5):
-			# 		pred.append(2)
-			# 	else:
-			# 		pred.append(1)
-			xscore = score.get_score( prediction, [ data[i][-1] for i in test ])
-			finalscore = finalscore + xscore
-			print xscore
-			print "done"
+skf = StratifiedKFold(data[:,-1], n_folds=5, shuffle=True)
+output =[]
+finalscore = 0
+counter = 0
+for train, test in skf:
+	counter = counter + 1
+	newdata = prj.fit_transform([ normdata[i][:] for i in train ],[ data[i][-1] for i in train ])
+	newtestdata = prj.transform([ normdata[i][:] for i in test ])
+	clf = SVC(class_weight = dict, kernel = 'rbf',  gamma = 4  )
+	clf = clf.fit(newdata, [ data[i][-1] for i in train ])
+	prediction = clf.predict(newtestdata)
+	# pred = []
+	# for i in prediction:
+	# 	if(i > 1.5):
+	# 		pred.append(2)
+	# 	else:
+	# 		pred.append(1)
+	xscore = score.get_score( prediction, [ data[i][-1] for i in test ])
+	finalscore = finalscore + xscore
+	print xscore
+	print "done"
 
-		finalscore = finalscore*(1.0)/counter
-		print f
-		print l
-		print finalscore
-		if maxscore < finalscore:
-			maxscore = finalscore
-			maxf = f
-			maxl = l
+finalscore = finalscore*(1.0)/counter
+print finalscore
+		
 # score = cross_val_score(clf, newdata[:,:], data[:,-1], cv = 5, scoring = 'get_score')
 # print "in scores"
 # for i in score:
@@ -70,5 +63,3 @@ for f in range(3,4):
 # print "out of score"
 # for i in output:
 # 	print i
-print maxf, maxl
-print maxscore

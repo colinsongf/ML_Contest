@@ -5,14 +5,14 @@ from sklearn.preprocessing import normalize
 clf = GradientBoostingClassifier(warm_start = True, n_estimators=1000)
 print 'clf created'
 
-trainData = np.array([ [ float(x.strip()) for x in line.split(',') ] for line in open('ML-contest-training/completedData.csv') ])
+trainData = np.array([ [ float(x.strip()) for x in line.split(',') ] for line in open('completedDataMedian.csv') ])
 train = normalize(trainData[:,:-1])
 print 'train data read'
 
 clf.fit(train, trainData[:,-1])
 print 'clf trained'
 
-testData = [ [ float(x.strip()) for x in line.split(',') ] for line in open('completedTestData.csv') ]
+testData = [ [ float(x.strip()) for x in line.split(',') ] for line in open('completedTestDataMedian.csv') ]
 newdata = normalize(testData)
 print np.shape(newdata)
 print "test data read"
@@ -20,7 +20,7 @@ print "test data read"
 prediction = clf.predict(newdata)
 print "predicted"
 
-f = open('team04.txt', 'w')
+f = open('team04_median.txt', 'w')
 def num(x):
 	if x == 1:
 		return 'A'

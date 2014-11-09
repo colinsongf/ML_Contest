@@ -9,7 +9,7 @@ from sklearn.cross_validation import cross_val_score, StratifiedKFold
 from sklearn.metrics import f1_score, make_scorer
 import score
 
-data = np.array([ [ float(x) for x in line.split(',') ] for line in open('ML-contest-training/completedData.csv') ])
+data = np.array([ [ float(x) for x in line.split(',') ] for line in open('completedDataMedian.csv') ])
 
 normdata = normalize(data[:,:-1])
 
