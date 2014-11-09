@@ -9,7 +9,7 @@ from sklearn.cross_validation import cross_val_score, StratifiedKFold
 from sklearn.metrics import f1_score, make_scorer
 import score
 
-data = np.array([ [ float(x) for x in line.split(',') ] for line in open('completedDataKNN.csv') ])
+data = np.array([ [ float(x) for x in line.split(',') ] for line in open('completedData10NN.csv') ])
 n = Normalizer(norm = 'l1')
 normdata = n.fit_transform(data[:,:-1], data[:,-1])
 # normdata = normalize(data[:,:-1])

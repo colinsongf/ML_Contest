@@ -10,7 +10,7 @@ from sklearn.metrics import f1_score, make_scorer
 import score
 
 data = np.array([ [ float(x) for x in line.split(',') ] for line in open('completedData10NN.csv') ])
-n = Normalizer()
+n = Normalizer(norm = 'l1')
 normdata = n.fit_transform(data[:,:-1], data[:,-1])
 # normdata = normalize(data[:,:-1])
 
@@ -34,7 +34,7 @@ counter = 0
 
 for train, test in skf:
 	counter = counter + 1	
-	clf = GradientBoostingClassifier(warm_start = True, n_estimators = 1000)
+	clf = GradientBoostingClassifier(warm_start = True, n_estimators = 1500)
 	clf = clf.fit([ newdata[i][:] for i in train ], [ data[i][-1] for i in train ])
 	prediction = clf.predict([ newdata[i][:] for i in test ])
 	# pred = []
