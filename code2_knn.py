@@ -1,6 +1,6 @@
 import numpy as np
 
-k=4
+k=10
 
 
 def dist(X,Y):
@@ -32,7 +32,7 @@ while len(missingData) > 0:
 
 filledData.extend(fillingData)
 
-fp = open('completedTestDataKNN.csv','w')
+fp = open('completedTestData10NN.csv','w')
 for datapoint in filledData:
 	fp.write(','.join([str(x) for x in datapoint]) + '\n')
 fp.close()

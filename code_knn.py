@@ -1,7 +1,7 @@
 import numpy as np
 
 
-k=4
+k=10
 
 
 def dist(X,Y):
@@ -38,7 +38,7 @@ filledData.extend(fillingData)
 class1 = [ datapoint[:-1] for datapoint in filledData if datapoint[-1] == 1 ]
 class2 = [ datapoint[:-1] for datapoint in filledData if datapoint[-1] == 2 ]
 
-fp = open('completedDataKNN.csv','w')
+fp = open('completedData10NN.csv','w')
 for row in class1:
 	for x in row:
 		fp.write(str(x) + ',')
