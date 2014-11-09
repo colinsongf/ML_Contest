@@ -4,14 +4,15 @@ from sklearn.svm import SVC
 import numpy as np
 from sklearn.ensemble import GradientBoostingClassifier
 from sklearn.ensemble import RandomForestClassifier
-from sklearn.preprocessing import normalize
+from sklearn.preprocessing import Normalizer
 from sklearn.cross_validation import cross_val_score, StratifiedKFold
 from sklearn.metrics import f1_score, make_scorer
 import score
 
 data = np.array([ [ float(x) for x in line.split(',') ] for line in open('completedDataKNN.csv') ])
-
-normdata = normalize(data[:,:-1])
+n = Normalizer(norm = 'l1')
+normdata = n.fit_transform(data[:,:-1], data[:,-1])
+# normdata = normalize(data[:,:-1])
 
 # prj = PCA(n_components = 100)
 # prj = LDA(n_components = 100)
@@ -33,7 +34,7 @@ counter = 0
 
 for train, test in skf:
 	counter = counter + 1	
-	clf = GradientBoostingClassifier(warm_start = True, n_estimators = 1500)
+	clf = GradientBoostingClassifier(warm_start = True, n_estimators = 1000)
 	clf = clf.fit([ newdata[i][:] for i in train ], [ data[i][-1] for i in train ])
 	prediction = clf.predict([ newdata[i][:] for i in test ])
 	# pred = []

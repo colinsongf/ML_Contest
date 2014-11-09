@@ -5,7 +5,7 @@ from sklearn.metrics import f1_score
 import score
 
 
-data = np.array([ [ float(x) for x in line.split(',') ] for line in open('completedDataMedian.csv') ])
+data = np.array([ [ float(x) for x in line.split(',') ] for line in open('completedDataKNN.csv') ])
 print "data done"
 print "logistic initialized"
 # clf.fit(data[:,:-1], data[:,-1])
@@ -18,8 +18,8 @@ print "getting in"
 flad = [0.99]*700 + [0.01]*2800
 for train, test in skf:
 	counter = counter + 1
-	clf = RandomForestClassifier(n_estimators = 500, n_jobs = 7 , bootstrap = True , min_density = 0.8)
-	clf = clf.fit([ data[i][:-1] for i in train ], [ data[i][-1] for i in train ], np.array([flad[i] for i in train ]))
+	clf = RandomForestClassifier(n_estimators = 500, n_jobs = 8 , max_features = None)
+	clf = clf.fit([ data[i][:-1] for i in train ], [ data[i][-1] for i in train ])
 	prediction = clf.predict([ data[i][:-1] for i in test ])
 	# pred = []
 	# for i in prediction:
