@@ -9,7 +9,7 @@ from sklearn.cross_validation import cross_val_score, StratifiedKFold
 from sklearn.metrics import f1_score, make_scorer
 import score
 
-data = np.array([ [ float(x) for x in line.split(',') ] for line in open('completedData10NN.csv') ])
+data = np.array([ [ float(x) for x in line.split(',') ] for line in open('completedDataKNN.csv') ])
 # n = Normalizer()
 # normdata = n.fit_transform(data[:,:-1], data[:,-1])
 # normdata = normalize(data[:,:-1])
@@ -36,8 +36,8 @@ for train, test in skf:
 	counter = counter + 1
 	n = Normalizer()	
 	netdata = n.fit_transform([ newdata[i][:-1] for i in train ], [ data[i][-1] for i in train ])
-	clf = GradientBoostingClassifier(warm_start = True, n_estimators = 1000)
-	clf = clf.fit(netdata, [ data[i][-1] for i in train ])
+	clf = GradientBoostingClassifier(warm_start = True, n_estimators = 1500)
+	clf = clf.fit( netdata, [ data[i][-1] for i in train ])
 	n = Normalizer()
 	nowdata = n.fit_transform([ newdata[i][:-1] for i in test ])
 	prediction = clf.predict(nowdata)

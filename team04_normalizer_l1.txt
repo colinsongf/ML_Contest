@@ -1,0 +1,8 @@
+clf created
+train data read
+clf trained
+(1500, 1897)
+test data read
+predicted
+wrote to file
+done

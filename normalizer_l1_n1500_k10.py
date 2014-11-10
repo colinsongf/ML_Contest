@@ -10,8 +10,8 @@ from sklearn.metrics import f1_score, make_scorer
 import score
 
 data = np.array([ [ float(x) for x in line.split(',') ] for line in open('completedData10NN.csv') ])
-n = Normalizer(norm = 'l1')
-normdata = n.fit_transform(data[:,:-1], data[:,-1])
+# n = Normalizer()
+# normdata = n.fit_transform(data[:,:-1], data[:,-1])
 # normdata = normalize(data[:,:-1])
 
 # prj = PCA(n_components = 100)
@@ -33,10 +33,14 @@ finalscore = 0
 counter = 0
 
 for train, test in skf:
-	counter = counter + 1	
+	counter = counter + 1
+	n = Normalizer()	
+	netdata = n.fit_transform([ newdata[i][:-1] for i in train ], [ data[i][-1] for i in train ])
 	clf = GradientBoostingClassifier(warm_start = True, n_estimators = 1500)
-	clf = clf.fit([ newdata[i][:] for i in train ], [ data[i][-1] for i in train ])
-	prediction = clf.predict([ newdata[i][:] for i in test ])
+	clf = clf.fit(netdata, [ data[i][-1] for i in train ])
+	n = Normalizer()
+	nowdata = n.fit_transform([ newdata[i][:-1] for i in test ])
+	prediction = clf.predict(nowdata)
 	# pred = []
 	# for i in prediction:
 	# 	if(i > 1.5):
