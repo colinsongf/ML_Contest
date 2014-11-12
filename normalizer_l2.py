@@ -17,7 +17,7 @@ data = np.array([ [ float(x) for x in line.split(',') ] for line in open('comple
 # prj = PCA(n_components = 100)
 # prj = LDA(n_components = 100)
 # newdata = prj.fit_transform(normdata,data[:,-1])
-newdata = normdata
+newdata = data
 # for i in range(5):
 # 	print newdata[i]
 print len(newdata)

@@ -2,22 +2,21 @@ from sklearn.decomposition import PCA
 from sklearn.lda import LDA
 from sklearn.svm import SVC
 import numpy as np
-from sklearn.ensemble import GradientBoostingClassifier
+from sklearn.ensemble import AdaBoostClassifier
 from sklearn.ensemble import RandomForestClassifier
-from sklearn.preprocessing import Normalizer
+from sklearn.preprocessing import normalize
 from sklearn.cross_validation import cross_val_score, StratifiedKFold
 from sklearn.metrics import f1_score, make_scorer
 import score
 
 data = np.array([ [ float(x) for x in line.split(',') ] for line in open('completedData10NN.csv') ])
-# n = Normalizer()
-# normdata = n.fit_transform(data[:,:-1], data[:,-1])
-# normdata = normalize(data[:,:-1])
+
+normdata = normalize(data[:,:-1])
 
 # prj = PCA(n_components = 100)
 # prj = LDA(n_components = 100)
 # newdata = prj.fit_transform(normdata,data[:,-1])
-newdata = data
+newdata = normdata
 # for i in range(5):
 # 	print newdata[i]
 print len(newdata)
@@ -31,16 +30,12 @@ skf = StratifiedKFold(data[:,-1], n_folds=10, shuffle=True)
 output =[]
 finalscore = 0
 counter = 0
-
+flad = [0.8]*700 + [0.2]*2800
 for train, test in skf:
-	counter = counter + 1
-	n = Normalizer()	
-	netdata = n.fit_transform([ newdata[i][:-1] for i in train ], [ data[i][-1] for i in train ])
-	clf = GradientBoostingClassifier(warm_start = True, n_estimators = 1500)
-	clf = clf.fit(netdata, [ data[i][-1] for i in train ])
-	n = Normalizer()
-	nowdata = n.fit_transform([ newdata[i][:-1] for i in test ])
-	prediction = clf.predict(nowdata)
+	counter = counter + 1	
+	clf = AdaBoostClassifier(n_estimators = 1500)
+	clf = clf.fit([ newdata[i][:] for i in train ], [ data[i][-1] for i in train ],np.array([flad[i] for i in train ]) )
+	prediction = clf.predict([ newdata[i][:] for i in test ])
 	# pred = []
 	# for i in prediction:
 	# 	if(i > 1.5):

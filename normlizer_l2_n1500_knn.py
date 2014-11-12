@@ -17,7 +17,7 @@ data = np.array([ [ float(x) for x in line.split(',') ] for line in open('comple
 # prj = PCA(n_components = 100)
 # prj = LDA(n_components = 100)
 # newdata = prj.fit_transform(normdata,data[:,-1])
-newdata = normdata
+newdata = data
 # for i in range(5):
 # 	print newdata[i]
 print len(newdata)
@@ -36,10 +36,12 @@ for train, test in skf:
 	counter = counter + 1
 	n = Normalizer()	
 	netdata = n.fit_transform([ newdata[i][:-1] for i in train ], [ data[i][-1] for i in train ])
+	print np.shape(netdata)
 	clf = GradientBoostingClassifier(warm_start = True, n_estimators = 1500)
 	clf = clf.fit( netdata, [ data[i][-1] for i in train ])
 	n = Normalizer()
 	nowdata = n.fit_transform([ newdata[i][:-1] for i in test ])
+	print np.shape(nowdata)
 	prediction = clf.predict(nowdata)
 	# pred = []
 	# for i in prediction:
