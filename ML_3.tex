@@ -1,0 +1,165 @@
+\documentclass{article}
+\usepackage{url}
+\usepackage{fancyhdr} % Required for custom headers
+\usepackage{lastpage} % Required to determine the last page for the footer
+\usepackage{extramarks} % Required for headers and footers
+\usepackage{graphicx} % Required to insert images
+\usepackage{lipsum} % Used for inserting dummy 'Lorem ipsum' text into the template
+\usepackage{ctable}
+
+% Margins
+\topmargin=-0.45in
+\evensidemargin=0in
+\oddsidemargin=0in
+\textwidth=6.5in
+\textheight=9.0in
+\headsep=0.25in 
+
+\linespread{1.1} % Line spacing
+
+% Set up the header and footer
+\pagestyle{fancy}
+\chead{\hmwkTitle} % Top center header
+\renewcommand\headrulewidth{0.4pt} % Size of the header rule
+\renewcommand\footrulewidth{0.4pt} % Size of the footer rule
+
+\setlength\parindent{0pt} % Removes all indentation from paragraphs
+
+% Header and footer for when a page split occurs within a problem environment
+\newcommand{\enterProblemHeader}[1]{
+\nobreak\extramarks{#1}{#1 continued on next page\ldots}\nobreak
+\nobreak\extramarks{#1 (continued)}{#1 continued on next page\ldots}\nobreak
+}
+
+% Header and footer for when a page split occurs between problem environments
+\newcommand{\exitProblemHeader}[1]{
+\nobreak\extramarks{#1 (continued)}{#1 continued on next page\ldots}\nobreak
+\nobreak\extramarks{#1}{}\nobreak
+}
+
+\setcounter{secnumdepth}{0} % Removes default section numbers
+\newcounter{homeworkProblemCounter} % Creates a counter to keep track of the number of problems
+
+\newcommand{\homeworkProblemName}{}
+\newenvironment{homeworkProblem}[1][Question \arabic{homeworkProblemCounter}]{ % Makes a new environment called homeworkProblem which takes 1 argument (custom name) but the default is "Problem #"
+\stepcounter{homeworkProblemCounter} % Increase counter for number of problems
+\renewcommand{\homeworkProblemName}{#1} % Assign \homeworkProblemName the name of the problem
+\section{\homeworkProblemName} % Make a section in the document with the custom problem count
+\enterProblemHeader{\homeworkProblemName} % Header and footer within the environment
+}{
+\exitProblemHeader{\homeworkProblemName} % Header and footer after the environment
+}
+
+\newcommand{\problemAnswer}[1]{ % Defines the problem answer command with the content as the only argument
+\noindent\framebox[\columnwidth][c]{\begin{minipage}{0.98\columnwidth}#1\end{minipage}} % Makes the box around the problem answer and puts the content inside
+}
+
+\newcommand{\homeworkSectionName}{}
+\newenvironment{homeworkSection}[1]{ % New environment for sections within homework problems, takes 1 argument - the name of the section
+\renewcommand{\homeworkSectionName}{#1} % Assign \homeworkSectionName to the name of the section from the environment argument
+\subsection{\homeworkSectionName} % Make a subsection with the custom name of the subsection
+\enterProblemHeader{\homeworkProblemName\ [\homeworkSectionName]} % Header and footer within the environment
+}{
+\enterProblemHeader{\homeworkProblemName} % Header and footer after the environment
+}
+   
+%----------------------------------------------------------------------------------------
+%       NAME AND CLASS SECTION
+%----------------------------------------------------------------------------------------
+
+\newcommand{\hmwkTitle}{Machine\ Learning\ Contest\ Report} % Assignment title
+\newcommand{\hmwkDueDate}{Sunday,\ November\ 18,\ 2014} % Due date
+\newcommand{\hmwkClass}{CS\ 5011}
+\newcommand{\hmwkAuthorName}{Team\ 04} % Your name
+
+%----------------------------------------------------------------------------------------
+%       TITLE PAGE
+%----------------------------------------------------------------------------------------
+
+\title{
+\textmd{\textbf{\hmwkClass:\ \hmwkTitle}}\\
+\normalsize\vspace{0.1in}\small{Due\ on\ \hmwkDueDate}\\
+}
+
+\author{\textbf{\hmwkAuthorName}}
+\date{Pratik ( cs12b023 ) and Sagar ( cs12b039 )} % Insert date here if you want it to appear below your name
+
+%----------------------------------------------------------------------------------------
+
+\begin{document}
+
+\maketitle
+{\bf Missing Values:}\\
+
+We first tried to remove all the instances and columns of data which had missing values. Both ways didn't work as there were missing values in almost 2411 out of 3500 instances and 1606 out of 1897 columns.\\
+We have tried the following methods to fill in the missing values.\\
+1. Mean.\\
+2. Median.\\
+3. KNN for different values of k(4,8,10).\\
+4. Used weka directly without filling values.\\
+
+We initially used mean and median. The scores we got were almost same for different classifiers. When we used KNN we got significantly better scores.\\
+
+{\bf Class Imbalance:}\\
+
+There was a huge class imbalance (700:2800) in the data. Due to this many classifiers were not working well.\\
+Methods used to handle class imbalance:\\
+1. Oversampling using our own algorithm.\\
+2. Giving class weights in some classifiers.\\
+3. Using cost sensitive classifiers available in weka.\\
+4. Smote.\\
+
+Some of the classifiers had an option of giving weights to the classes but most of them did not have this feature (like random forests etc ). So we first tried to oversample the data on our own by repeating the values that were in the training set 3 times to make that class balanced. But this led the classifier to over fit the class A and was not giving good scores even compared to the score without oversampling.\\
+We then tried cost sensitive classifier in weka. Finally we used smote for oversampling of data.\\
+
+{\bf Dimensionality Reduction/Extraction:}\\
+
+We used the following methods for dimensionality reduction/extraction.\\
+1. Principal Component Analysis.\\
+2. Linear Discriminant Analysis.\\
+3. Feature Agglomeration.\\
+
+We used PCA to extract number of features(100, 200, 1000 etc) but nothing worked as better as using all the features directly. So finally we did not do any feature reduction/extraction.\\
+
+{\bf Normalization:}\\
+
+We initially normalized the data using normal normalize function in sklearn. Then we used Normalizer function which actually regularizes the data in sklean which gave very good scores compared to normalize and almost the best of all till then ( around 82\% ). But when we submitted we got very less score ( 26\% ) and we don't know the reason behind it till now.\\
+
+{\bf Cross Validation:}\\
+These are the following methods we used for cross validation.\\
+
+1. k-fold Cross Validation.\\
+2. Stratified k-fold Cross Validation.\\
+
+Stratified k-fold tries to preserve the class distribution in the train and test data set. Initially when we were using normal cross validation. Our scores were random because of this reason as some times the class distribution is captured in the train and test datasets and some times not. Then when we used stratified k-fold cross validation we got better scores and were able to distinguish which were correctly classifying and which were not.\\
+
+{\bf Classifiers:}\\
+These are the different classifiers we used for the classification task.\\
+
+1. SVM.\\
+2. Random Forest.\\
+3. Adaboost.\\
+4. Bagging.\\
+5. Gradient Boosting.\\
+6. Gaussian Markov Model.\\
+7. Linear Regression.\\
+8. KNN.\\
+9. Logistic Regression.\\
+10. Random Tree.\\
+11. Naive Bayes.\\
+
+We found that all the classifiers we performing badly except gradient boosting and adaboost. We first started with n = 500 in gradient boosting and increased upto 2500. But we found out that after n = 1500 the scores came down again.\\
+
+{\bf Majority Voting:}\\
+
+After using a lot of classifiers we then started voting using these different classifiers. This will reduce the variance and also error made by one type of classifier won't be made by other type of classifiers. This helped us get more scores at last.\\
+ 
+{\bf Brief Summary of how we have done it:}\\
+
+I think that the data is not linearly separable. This might be because none of the linear models we used were working better.
+We used gradient boosting with n = 1000 on the mean filled missing values data for our first submission ( 76\% ). And then we increased n to 1500 and we got ( 77\% ). But then when as we increased n further more our score decreased. Then we tried using median data. But this did not work. We tried KNN using different values of k = 4, 8, 10. We found that 10 gave better answers on the cross validation.\\
+
+Then we shifted to weka from python.
+
+You can find our work at \url{https://github.com/jpsagarm95/ML_Contest}
+\end{document}

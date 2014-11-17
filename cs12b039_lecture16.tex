@@ -172,11 +172,6 @@ $ = \sum\limits_{i = 1}^N [(r_{im} - \beta b(x_{i}, \gamma))^2]$
 where $r_{im}$ is the residual at $m^{th}$ stage.\\
 We use some different loss function for classification and it is called as adaboost.
 
-\begin{figure}
-\centering
-\includegraphics[width = 0.5\textwidth]{boosting.jpg}
-\caption{Picture showing power of boosting}
-\end{figure}
 \subsubsection*{Adaboost:-}
 Adaboost known as adaptive boosting is used for classification. Here loss function is a exponential loss function.
 \begin{center}
@@ -239,11 +234,7 @@ p($x_{i}$ sampled in stage m) = $\frac{w_{i}^{(m)}}{w^{(m)}}$
 \end{center}
 Adaboost typically doesn't suffer from over fitting. Both errors testing and training decrease with adaboost. But after some time the decrease will be very less.
 
-\begin{figure}
-\centering
-\includegraphics[width = 0.5\textwidth]{boost.jpg}
-\caption{Picture showing errors after doing adaboost on test and train datasets}
-\end{figure}
+
 
 
 If classifier that we take is not weak then the weights will be very low resulting in very smaller probabilities for all points as strong classifier can classify most of the points correctly. So if we sample then we get same dataset again. So we do not get any advantage.\\
