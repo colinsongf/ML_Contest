@@ -4,7 +4,7 @@ import sys
 print sys.argv[1:]
 
 files = [open(f) for f in sys.argv[1:]]
-output = open('majority_vote.txt', 'w')
+output = open('majority_vote7.txt', 'w')
 
 for i in range(1500):
 	AlessB=0

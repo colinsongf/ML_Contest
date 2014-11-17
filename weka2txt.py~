@@ -1,0 +1,18 @@
+import sys
+print sys.argv
+f = open('nov16_random')
+g=open('team04_nov16_random_values.txt','w')
+for l in f:
+	try:
+		if l[25]=='1':
+			g.write('A\n')
+		elif l[25]=='2':
+			g.write('B\n')
+		else:
+			g.write('C\n')
+	except IndexError:
+		print l
+f.close()
+g.close()
+print "done"
+

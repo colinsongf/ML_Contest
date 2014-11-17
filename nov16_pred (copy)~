@@ -1,0 +1,3765 @@
+=== Run information ===
+
+Scheme:weka.classifiers.meta.CostSensitiveClassifier -cost-matrix "[0.0 2.0; 1.0 0.0]" -M -S 1 -W weka.classifiers.meta.AdaBoostM1 -- -Q -P 100 -S 1 -I 100 -W weka.classifiers.trees.DecisionStump
+Relation:     contest_train2-weka.filters.supervised.instance.SMOTE-C0-K5-P100.0-S1
+Instances:    4200
+Attributes:   1898
+[list of attributes omitted]
+Test mode:user supplied test set: size unknown (reading incrementally)
+
+=== Classifier model (full training set) ===
+
+CostSensitiveClassifier using minimized expected misclasification cost
+
+weka.classifiers.meta.AdaBoostM1 -Q -P 100 -S 1 -I 100 -W weka.classifiers.trees.DecisionStump
+
+Classifier Model
+AdaBoostM1: Base classifiers and their weights: 
+
+Decision Stump
+
+Classifications
+
+Att341 <= 21.007525984294567 : 2
+Att341 > 21.007525984294567 : 1
+Att341 is missing : 1
+
+Class distributions
+
+Att341 <= 21.007525984294567
+1	2	
+0.13433637829124126	0.8656636217087588	
+Att341 > 21.007525984294567
+1	2	
+0.512853470437018	0.487146529562982	
+Att341 is missing
+1	2	
+0.8	0.2	
+
+
+Weight: 0.68
+
+Decision Stump
+
+Classifications
+
+Att913 <= 17.009997907841566 : 2
+Att913 > 17.009997907841566 : 2
+Att913 is missing : 2
+
+Class distributions
+
+Att913 <= 17.009997907841566
+1	2	
+0.15161923454367027	0.8483807654563298	
+Att913 > 17.009997907841566
+1	2	
+0.4315448658649399	0.5684551341350601	
+Att913 is missing
+1	2	
+0.2957142857142857	0.7042857142857143	
+
+
+Weight: 0.87
+
+Decision Stump
+
+Classifications
+
+Att913 <= 17.009997907841566 : 2
+Att913 > 17.009997907841566 : 1
+Att913 is missing : 2
+
+Class distributions
+
+Att913 <= 17.009997907841566
+1	2	
+0.29572649572649573	0.7042735042735043	
+Att913 > 17.009997907841566
+1	2	
+0.6546349466776046	0.3453650533223954	
+Att913 is missing
+1	2	
+0.42857142857142855	0.5714285714285714	
+
+
+Weight: 0.67
+
+Decision Stump
+
+Classifications
+
+Att254 <= 127.0 : 1
+Att254 > 127.0 : 2
+Att254 is missing : 2
+
+Class distributions
+
+Att254 <= 127.0
+1	2	
+0.5166212534059945	0.4833787465940054	
+Att254 > 127.0
+1	2	
+0.08538899430740038	0.9146110056925996	
+Att254 is missing
+1	2	
+0.0	1.0	
+
+
+Weight: 0.28
+
+Decision Stump
+
+Classifications
+
+Att148 <= 98.5 : 2
+Att148 > 98.5 : 2
+Att148 is missing : 2
+
+Class distributions
+
+Att148 <= 98.5
+1	2	
+0.498849252013809	0.501150747986191	
+Att148 > 98.5
+1	2	
+0.12569060773480664	0.8743093922651933	
+Att148 is missing
+1	2	
+0.43452380952380953	0.5654761904761905	
+
+
+Weight: 0.34
+
+Decision Stump
+
+Classifications
+
+Att1042 <= 18.00083831107778 : 2
+Att1042 > 18.00083831107778 : 1
+Att1042 is missing : 2
+
+Class distributions
+
+Att1042 <= 18.00083831107778
+1	2	
+0.3948959032907992	0.6051040967092008	
+Att1042 > 18.00083831107778
+1	2	
+0.7193126022913257	0.2806873977086743	
+Att1042 is missing
+1	2	
+0.48928571428571427	0.5107142857142857	
+
+
+Weight: 0.46
+
+Decision Stump
+
+Classifications
+
+Att1713 <= 130.5 : 1
+Att1713 > 130.5 : 2
+Att1713 is missing : 1
+
+Class distributions
+
+Att1713 <= 130.5
+1	2	
+0.6134615384615385	0.38653846153846155	
+Att1713 > 130.5
+1	2	
+0.16308243727598568	0.8369175627240143	
+Att1713 is missing
+1	2	
+1.0	0.0	
+
+
+Weight: 0.55
+
+Decision Stump
+
+Classifications
+
+Att1832 <= 2.9978502020494138 : 1
+Att1832 > 2.9978502020494138 : 2
+Att1832 is missing : 2
+
+Class distributions
+
+Att1832 <= 2.9978502020494138
+1	2	
+0.52275600505689	0.47724399494311	
+Att1832 > 2.9978502020494138
+1	2	
+0.20772946859903382	0.7922705314009661	
+Att1832 is missing
+1	2	
+0.0	1.0	
+
+
+Weight: 0.31
+
+Decision Stump
+
+Classifications
+
+Att1716 <= 195.02388697837003 : 2
+Att1716 > 195.02388697837003 : 1
+Att1716 is missing : 2
+
+Class distributions
+
+Att1716 <= 195.02388697837003
+1	2	
+0.30943536404160477	0.6905646359583952	
+Att1716 > 195.02388697837003
+1	2	
+0.6086378737541528	0.39136212624584715	
+Att1716 is missing
+1	2	
+0.0	1.0	
+
+
+Weight: 0.65
+
+Decision Stump
+
+Classifications
+
+Att180 <= 2.0081237666258205 : 2
+Att180 > 2.0081237666258205 : 1
+Att180 is missing : 2
+
+Class distributions
+
+Att180 <= 2.0081237666258205
+1	2	
+0.3135330578512397	0.6864669421487604	
+Att180 > 2.0081237666258205
+1	2	
+0.5596289752650176	0.44037102473498235	
+Att180 is missing
+1	2	
+0.4461904761904762	0.5538095238095239	
+
+
+Weight: 0.47
+
+Decision Stump
+
+Classifications
+
+Att38 <= 1744.0 : 2
+Att38 > 1744.0 : 2
+Att38 is missing : 2
+
+Class distributions
+
+Att38 <= 1744.0
+1	2	
+0.4842681258549932	0.5157318741450069	
+Att38 > 1744.0
+1	2	
+0.14311926605504588	0.8568807339449541	
+Att38 is missing
+1	2	
+0.44	0.56	
+
+
+Weight: 0.25
+
+Decision Stump
+
+Classifications
+
+Att1492 <= 2003.0 : 1
+Att1492 > 2003.0 : 2
+Att1492 is missing : 1
+
+Class distributions
+
+Att1492 <= 2003.0
+1	2	
+0.5397609147609148	0.46023908523908524	
+Att1492 > 2003.0
+1	2	
+0.0953757225433526	0.9046242774566474	
+Att1492 is missing
+1	2	
+0.6666666666666666	0.3333333333333333	
+
+
+Weight: 0.26
+
+Decision Stump
+
+Classifications
+
+Att1670 <= 0.9951450946328197 : 1
+Att1670 > 0.9951450946328197 : 2
+Att1670 is missing : 1
+
+Class distributions
+
+Att1670 <= 0.9951450946328197
+1	2	
+0.5068368277119416	0.49316317228805834	
+Att1670 > 0.9951450946328197
+1	2	
+0.24172185430463577	0.7582781456953642	
+Att1670 is missing
+1	2	
+1.0	0.0	
+
+
+Weight: 0.23
+
+Decision Stump
+
+Classifications
+
+Att1161 <= 47.5 : 2
+Att1161 > 47.5 : 2
+Att1161 is missing : 2
+
+Class distributions
+
+Att1161 <= 47.5
+1	2	
+0.015625	0.984375	
+Att1161 > 47.5
+1	2	
+0.4363909022744314	0.5636090977255686	
+Att1161 is missing
+1	2	
+0.0	1.0	
+
+
+Weight: 0.35
+
+Decision Stump
+
+Classifications
+
+Att675 <= 50.5 : 1
+Att675 > 50.5 : 2
+Att675 is missing : 2
+
+Class distributions
+
+Att675 <= 50.5
+1	2	
+0.5050629785132131	0.49493702148678687	
+Att675 > 50.5
+1	2	
+0.006711409395973154	0.9932885906040269	
+Att675 is missing
+1	2	
+0.0	1.0	
+
+
+Weight: 0.13
+
+Decision Stump
+
+Classifications
+
+Att975 <= 13.016523561976586 : 2
+Att975 > 13.016523561976586 : 1
+Att975 is missing : 2
+
+Class distributions
+
+Att975 <= 13.016523561976586
+1	2	
+0.21331316187594554	0.7866868381240545	
+Att975 > 13.016523561976586
+1	2	
+0.5287943262411348	0.47120567375886524	
+Att975 is missing
+1	2	
+0.0	1.0	
+
+
+Weight: 0.22
+
+Decision Stump
+
+Classifications
+
+Att128 <= 0.9997534096180238 : 1
+Att128 > 0.9997534096180238 : 2
+Att128 is missing : 2
+
+Class distributions
+
+Att128 <= 0.9997534096180238
+1	2	
+0.6309148264984227	0.36908517350157727	
+Att128 > 0.9997534096180238
+1	2	
+0.38134810710988	0.61865189289012	
+Att128 is missing
+1	2	
+0.43785714285714283	0.5621428571428572	
+
+
+Weight: 0.46
+
+Decision Stump
+
+Classifications
+
+Att1161 <= 41.5 : 2
+Att1161 > 41.5 : 1
+Att1161 is missing : 2
+
+Class distributions
+
+Att1161 <= 41.5
+1	2	
+0.01948051948051948	0.9805194805194806	
+Att1161 > 41.5
+1	2	
+0.5212976721149084	0.47870232788509165	
+Att1161 is missing
+1	2	
+0.0	1.0	
+
+
+Weight: 0.13
+
+Decision Stump
+
+Classifications
+
+Att1161 <= 49.04988258017379 : 2
+Att1161 > 49.04988258017379 : 2
+Att1161 is missing : 2
+
+Class distributions
+
+Att1161 <= 49.04988258017379
+1	2	
+0.031088082901554404	0.9689119170984456	
+Att1161 > 49.04988258017379
+1	2	
+0.49075462268865566	0.5092453773113443	
+Att1161 is missing
+1	2	
+0.0	1.0	
+
+
+Weight: 0.14
+
+Decision Stump
+
+Classifications
+
+Att452 <= 60.5 : 1
+Att452 > 60.5 : 2
+Att452 is missing : 1
+
+Class distributions
+
+Att452 <= 60.5
+1	2	
+0.5290913592473384	0.47090864075266153	
+Att452 > 60.5
+1	2	
+0.03821656050955414	0.9617834394904459	
+Att452 is missing
+1	2	
+0.75	0.25	
+
+
+Weight: 0.13
+
+Decision Stump
+
+Classifications
+
+Att1161 <= 41.5 : 2
+Att1161 > 41.5 : 2
+Att1161 is missing : 2
+
+Class distributions
+
+Att1161 <= 41.5
+1	2	
+0.0	1.0	
+Att1161 > 41.5
+1	2	
+0.4894036471168063	0.5105963528831937	
+Att1161 is missing
+1	2	
+0.0	1.0	
+
+
+Weight: 0.12
+
+Decision Stump
+
+Classifications
+
+Att1161 <= 41.5 : 2
+Att1161 > 41.5 : 1
+Att1161 is missing : 2
+
+Class distributions
+
+Att1161 <= 41.5
+1	2	
+0.02	0.98	
+Att1161 > 41.5
+1	2	
+0.5260029717682021	0.4739970282317979	
+Att1161 is missing
+1	2	
+0.0	1.0	
+
+
+Weight: 0.13
+
+Decision Stump
+
+Classifications
+
+Att1161 <= 208.13255460281437 : 2
+Att1161 > 208.13255460281437 : 1
+Att1161 is missing : 2
+
+Class distributions
+
+Att1161 <= 208.13255460281437
+1	2	
+0.4276113133576029	0.5723886866423971	
+Att1161 > 208.13255460281437
+1	2	
+0.709470304975923	0.29052969502407705	
+Att1161 is missing
+1	2	
+0.0	1.0	
+
+
+Weight: 0.33
+
+Decision Stump
+
+Classifications
+
+Att943 <= 870.5 : 1
+Att943 > 870.5 : 2
+Att943 is missing : 2
+
+Class distributions
+
+Att943 <= 870.5
+1	2	
+0.5461596197147861	0.4538403802852139	
+Att943 > 870.5
+1	2	
+0.09137055837563451	0.9086294416243654	
+Att943 is missing
+1	2	
+0.0	1.0	
+
+
+Weight: 0.25
+
+Decision Stump
+
+Classifications
+
+Att478 <= 66.5 : 1
+Att478 > 66.5 : 2
+Att478 is missing : 2
+
+Class distributions
+
+Att478 <= 66.5
+1	2	
+0.5184486937786157	0.4815513062213843	
+Att478 > 66.5
+1	2	
+0.20739219712525667	0.7926078028747433	
+Att478 is missing
+1	2	
+0.48238095238095235	0.5176190476190476	
+
+
+Weight: 0.12
+
+Decision Stump
+
+Classifications
+
+Att1695 <= 409.0 : 2
+Att1695 > 409.0 : 2
+Att1695 is missing : 2
+
+Class distributions
+
+Att1695 <= 409.0
+1	2	
+0.4921787709497207	0.5078212290502794	
+Att1695 > 409.0
+1	2	
+0.20292207792207792	0.797077922077922	
+Att1695 is missing
+1	2	
+0.0	1.0	
+
+
+Weight: 0.21
+
+Decision Stump
+
+Classifications
+
+Att1235 <= 210.20006614764594 : 2
+Att1235 > 210.20006614764594 : 1
+Att1235 is missing : 2
+
+Class distributions
+
+Att1235 <= 210.20006614764594
+1	2	
+0.43347772277227725	0.5665222772277227	
+Att1235 > 210.20006614764594
+1	2	
+0.6714876033057852	0.3285123966942149	
+Att1235 is missing
+1	2	
+0.48833333333333334	0.5116666666666667	
+
+
+Weight: 0.28
+
+Decision Stump
+
+Classifications
+
+Att1486 <= 16.992312460410464 : 1
+Att1486 > 16.992312460410464 : 2
+Att1486 is missing : 2
+
+Class distributions
+
+Att1486 <= 16.992312460410464
+1	2	
+0.5858381502890173	0.41416184971098263	
+Att1486 > 16.992312460410464
+1	2	
+0.3246930422919509	0.6753069577080492	
+Att1486 is missing
+1	2	
+0.2857142857142857	0.7142857142857143	
+
+
+Weight: 0.36
+
+Decision Stump
+
+Classifications
+
+Att38 <= 1876.5 : 1
+Att38 > 1876.5 : 2
+Att38 is missing : 2
+
+Class distributions
+
+Att38 <= 1876.5
+1	2	
+0.5121695891127978	0.4878304108872023	
+Att38 > 1876.5
+1	2	
+0.19525065963060687	0.8047493403693932	
+Att38 is missing
+1	2	
+0.4835714285714286	0.5164285714285715	
+
+
+Weight: 0.09
+
+Decision Stump
+
+Classifications
+
+Att876 <= 15.998898331009197 : 1
+Att876 > 15.998898331009197 : 2
+Att876 is missing : 1
+
+Class distributions
+
+Att876 <= 15.998898331009197
+1	2	
+0.5994587280108254	0.40054127198917455	
+Att876 > 15.998898331009197
+1	2	
+0.3914002205071665	0.6085997794928335	
+Att876 is missing
+1	2	
+1.0	0.0	
+
+
+Weight: 0.36
+
+Decision Stump
+
+Classifications
+
+Att1161 <= 50.5 : 2
+Att1161 > 50.5 : 1
+Att1161 is missing : 2
+
+Class distributions
+
+Att1161 <= 50.5
+1	2	
+0.06282722513089005	0.93717277486911	
+Att1161 > 50.5
+1	2	
+0.5038682305964562	0.4961317694035438	
+Att1161 is missing
+1	2	
+0.0	1.0	
+
+
+Weight: 0.07
+
+Decision Stump
+
+Classifications
+
+Att815 <= 17.00185446655894 : 2
+Att815 > 17.00185446655894 : 1
+Att815 is missing : 2
+
+Class distributions
+
+Att815 <= 17.00185446655894
+1	2	
+0.41014588859416445	0.5898541114058355	
+Att815 > 17.00185446655894
+1	2	
+0.6283783783783784	0.3716216216216216	
+Att815 is missing
+1	2	
+0.4716666666666667	0.5283333333333333	
+
+
+Weight: 0.38
+
+Decision Stump
+
+Classifications
+
+Att492 <= 1.9994080001152925 : 1
+Att492 > 1.9994080001152925 : 2
+Att492 is missing : 2
+
+Class distributions
+
+Att492 <= 1.9994080001152925
+1	2	
+0.5671921921921922	0.4328078078078078	
+Att492 > 1.9994080001152925
+1	2	
+0.3619791666666667	0.6380208333333334	
+Att492 is missing
+1	2	
+0.49214285714285716	0.5078571428571429	
+
+
+Weight: 0.37
+
+Decision Stump
+
+Classifications
+
+Att262 <= 2.00300519814608 : 2
+Att262 > 2.00300519814608 : 1
+Att262 is missing : 2
+
+Class distributions
+
+Att262 <= 2.00300519814608
+1	2	
+0.3383233532934132	0.6616766467065869	
+Att262 > 2.00300519814608
+1	2	
+0.5353146853146853	0.4646853146853147	
+Att262 is missing
+1	2	
+0.0	1.0	
+
+
+Weight: 0.3
+
+Decision Stump
+
+Classifications
+
+Att729 <= 4.998771776442841 : 1
+Att729 > 4.998771776442841 : 2
+Att729 is missing : 2
+
+Class distributions
+
+Att729 <= 4.998771776442841
+1	2	
+0.5056085249579361	0.49439147504206393	
+Att729 > 4.998771776442841
+1	2	
+0.23089171974522293	0.7691082802547771	
+Att729 is missing
+1	2	
+0.0	1.0	
+
+
+Weight: 0.11
+
+Decision Stump
+
+Classifications
+
+Att746 <= 15.027091692332647 : 2
+Att746 > 15.027091692332647 : 2
+Att746 is missing : 2
+
+Class distributions
+
+Att746 <= 15.027091692332647
+1	2	
+0.13978494623655913	0.8602150537634409	
+Att746 > 15.027091692332647
+1	2	
+0.4772611139499234	0.5227388860500767	
+Att746 is missing
+1	2	
+0.0	1.0	
+
+
+Weight: 0.26
+
+Decision Stump
+
+Classifications
+
+Att579 <= 17.980219982027954 : 1
+Att579 > 17.980219982027954 : 2
+Att579 is missing : 1
+
+Class distributions
+
+Att579 <= 17.980219982027954
+1	2	
+0.5463743676222597	0.4536256323777403	
+Att579 > 17.980219982027954
+1	2	
+0.2898089171974522	0.7101910828025477	
+Att579 is missing
+1	2	
+1.0	0.0	
+
+
+Weight: 0.21
+
+Decision Stump
+
+Classifications
+
+Att1161 <= 41.5 : 2
+Att1161 > 41.5 : 2
+Att1161 is missing : 2
+
+Class distributions
+
+Att1161 <= 41.5
+1	2	
+0.008695652173913044	0.991304347826087	
+Att1161 > 41.5
+1	2	
+0.4796668299853013	0.5203331700146987	
+Att1161 is missing
+1	2	
+0.0	1.0	
+
+
+Weight: 0.15
+
+Decision Stump
+
+Classifications
+
+Att1393 <= 2051.5046873775236 : 1
+Att1393 > 2051.5046873775236 : 2
+Att1393 is missing : 2
+
+Class distributions
+
+Att1393 <= 2051.5046873775236
+1	2	
+0.5191770383540767	0.4808229616459233	
+Att1393 > 2051.5046873775236
+1	2	
+0.14728682170542637	0.8527131782945736	
+Att1393 is missing
+1	2	
+0.2	0.8	
+
+
+Weight: 0.14
+
+Decision Stump
+
+Classifications
+
+Att452 <= 60.5 : 2
+Att452 > 60.5 : 2
+Att452 is missing : 2
+
+Class distributions
+
+Att452 <= 60.5
+1	2	
+0.47800296589223923	0.5219970341077608	
+Att452 > 60.5
+1	2	
+0.0457516339869281	0.954248366013072	
+Att452 is missing
+1	2	
+0.0	1.0	
+
+
+Weight: 0.13
+
+Decision Stump
+
+Classifications
+
+Att1695 <= 409.0 : 1
+Att1695 > 409.0 : 2
+Att1695 is missing : 2
+
+Class distributions
+
+Att1695 <= 409.0
+1	2	
+0.5306681270536692	0.4693318729463308	
+Att1695 > 409.0
+1	2	
+0.25688073394495414	0.7431192660550459	
+Att1695 is missing
+1	2	
+0.0	1.0	
+
+
+Weight: 0.21
+
+Decision Stump
+
+Classifications
+
+Att1161 <= 41.5 : 2
+Att1161 > 41.5 : 2
+Att1161 is missing : 2
+
+Class distributions
+
+Att1161 <= 41.5
+1	2	
+0.015625	0.984375	
+Att1161 > 41.5
+1	2	
+0.49003199606202313	0.5099680039379768	
+Att1161 is missing
+1	2	
+0.0	1.0	
+
+
+Weight: 0.16
+
+Decision Stump
+
+Classifications
+
+Att266 <= 16.984294321850264 : 1
+Att266 > 16.984294321850264 : 2
+Att266 is missing : 1
+
+Class distributions
+
+Att266 <= 16.984294321850264
+1	2	
+0.5341511011987734	0.46584889880122665	
+Att266 > 16.984294321850264
+1	2	
+0.2973856209150327	0.7026143790849673	
+Att266 is missing
+1	2	
+1.0	0.0	
+
+
+Weight: 0.22
+
+Decision Stump
+
+Classifications
+
+Att811 <= 16.999297468044723 : 2
+Att811 > 16.999297468044723 : 2
+Att811 is missing : 2
+
+Class distributions
+
+Att811 <= 16.999297468044723
+1	2	
+0.49772727272727274	0.5022727272727273	
+Att811 > 16.999297468044723
+1	2	
+0.2551622418879056	0.7448377581120944	
+Att811 is missing
+1	2	
+0.0	1.0	
+
+
+Weight: 0.15
+
+Decision Stump
+
+Classifications
+
+Att1161 <= 41.5 : 2
+Att1161 > 41.5 : 1
+Att1161 is missing : 1
+
+Class distributions
+
+Att1161 <= 41.5
+1	2	
+0.009174311926605505	0.9908256880733946	
+Att1161 > 41.5
+1	2	
+0.5162551943290149	0.4837448056709851	
+Att1161 is missing
+1	2	
+0.503095238095238	0.4969047619047619	
+
+
+Weight: 0.09
+
+Decision Stump
+
+Classifications
+
+Att746 <= 15.027091692332647 : 2
+Att746 > 15.027091692332647 : 1
+Att746 is missing : 2
+
+Class distributions
+
+Att746 <= 15.027091692332647
+1	2	
+0.12	0.88	
+Att746 > 15.027091692332647
+1	2	
+0.506294058408862	0.49370594159113795	
+Att746 is missing
+1	2	
+0.0	1.0	
+
+
+Weight: 0.04
+
+Decision Stump
+
+Classifications
+
+Att1161 <= 41.5 : 2
+Att1161 > 41.5 : 2
+Att1161 is missing : 2
+
+Class distributions
+
+Att1161 <= 41.5
+1	2	
+0.0	1.0	
+Att1161 > 41.5
+1	2	
+0.4893720987051063	0.5106279012948938	
+Att1161 is missing
+1	2	
+0.0	1.0	
+
+
+Weight: 0.13
+
+Decision Stump
+
+Classifications
+
+Att1161 <= 41.5 : 2
+Att1161 > 41.5 : 1
+Att1161 is missing : 2
+
+Class distributions
+
+Att1161 <= 41.5
+1	2	
+0.0	1.0	
+Att1161 > 41.5
+1	2	
+0.5205210125337921	0.47947898746620793	
+Att1161 is missing
+1	2	
+0.0	1.0	
+
+
+Weight: 0.09
+
+Decision Stump
+
+Classifications
+
+Att1812 <= 22.744179731558635 : 2
+Att1812 > 22.744179731558635 : 2
+Att1812 is missing : 2
+
+Class distributions
+
+Att1812 <= 22.744179731558635
+1	2	
+0.49056603773584906	0.5094339622641509	
+Att1812 > 22.744179731558635
+1	2	
+0.14233576642335766	0.8576642335766423	
+Att1812 is missing
+1	2	
+0.0	1.0	
+
+
+Weight: 0.08
+
+Decision Stump
+
+Classifications
+
+Att470 <= 178.66041542797217 : 1
+Att470 > 178.66041542797217 : 2
+Att470 is missing : 2
+
+Class distributions
+
+Att470 <= 178.66041542797217
+1	2	
+0.5309252845126176	0.4690747154873825	
+Att470 > 178.66041542797217
+1	2	
+0.0728476821192053	0.9271523178807947	
+Att470 is missing
+1	2	
+0.0	1.0	
+
+
+Weight: 0.1
+
+Decision Stump
+
+Classifications
+
+Att1349 <= -0.0028887912237321456 : 1
+Att1349 > -0.0028887912237321456 : 2
+Att1349 is missing : 2
+
+Class distributions
+
+Att1349 <= -0.0028887912237321456
+1	2	
+0.5614395886889461	0.438560411311054	
+Att1349 > -0.0028887912237321456
+1	2	
+0.38755555555555554	0.6124444444444445	
+Att1349 is missing
+1	2	
+0.0	1.0	
+
+
+Weight: 0.28
+
+Decision Stump
+
+Classifications
+
+Att1061 <= 2095.491312141782 : 2
+Att1061 > 2095.491312141782 : 2
+Att1061 is missing : 2
+
+Class distributions
+
+Att1061 <= 2095.491312141782
+1	2	
+0.49265785609397944	0.5073421439060205	
+Att1061 > 2095.491312141782
+1	2	
+0.0	1.0	
+Att1061 is missing
+1	2	
+0.0	1.0	
+
+
+Weight: 0.08
+
+Decision Stump
+
+Classifications
+
+Att1098 <= 1469.7013602721559 : 1
+Att1098 > 1469.7013602721559 : 2
+Att1098 is missing : 1
+
+Class distributions
+
+Att1098 <= 1469.7013602721559
+1	2	
+0.5282051282051282	0.4717948717948718	
+Att1098 > 1469.7013602721559
+1	2	
+0.17465753424657535	0.8253424657534246	
+Att1098 is missing
+1	2	
+1.0	0.0	
+
+
+Weight: 0.15
+
+Decision Stump
+
+Classifications
+
+Att164 <= 1654.0 : 2
+Att164 > 1654.0 : 2
+Att164 is missing : 2
+
+Class distributions
+
+Att164 <= 1654.0
+1	2	
+0.49538077403245945	0.5046192259675406	
+Att164 > 1654.0
+1	2	
+0.09230769230769231	0.9076923076923077	
+Att164 is missing
+1	2	
+0.4766666666666667	0.5233333333333333	
+
+
+Weight: 0.13
+
+Decision Stump
+
+Classifications
+
+Att353 <= 10.549877193763457 : 1
+Att353 > 10.549877193763457 : 2
+Att353 is missing : 2
+
+Class distributions
+
+Att353 <= 10.549877193763457
+1	2	
+0.5340078695896571	0.4659921304103429	
+Att353 > 10.549877193763457
+1	2	
+0.2778649921507064	0.7221350078492935	
+Att353 is missing
+1	2	
+0.0	1.0	
+
+
+Weight: 0.22
+
+Decision Stump
+
+Classifications
+
+Att1148 <= 2276.0 : 2
+Att1148 > 2276.0 : 2
+Att1148 is missing : 2
+
+Class distributions
+
+Att1148 <= 2276.0
+1	2	
+0.47097560975609754	0.5290243902439025	
+Att1148 > 2276.0
+1	2	
+0.0	1.0	
+Att1148 is missing
+1	2	
+0.0	1.0	
+
+
+Weight: 0.16
+
+Decision Stump
+
+Classifications
+
+Att53 <= 15.004668977504114 : 2
+Att53 > 15.004668977504114 : 1
+Att53 is missing : 2
+
+Class distributions
+
+Att53 <= 15.004668977504114
+1	2	
+0.3465266558966074	0.6534733441033925	
+Att53 > 15.004668977504114
+1	2	
+0.549966239027684	0.450033760972316	
+Att53 is missing
+1	2	
+0.49	0.51	
+
+
+Weight: 0.27
+
+Decision Stump
+
+Classifications
+
+Att778 <= 413.5 : 1
+Att778 > 413.5 : 2
+Att778 is missing : 2
+
+Class distributions
+
+Att778 <= 413.5
+1	2	
+0.5138471805138471	0.4861528194861528	
+Att778 > 413.5
+1	2	
+0.32552301255230126	0.6744769874476988	
+Att778 is missing
+1	2	
+0.25	0.75	
+
+
+Weight: 0.18
+
+Decision Stump
+
+Classifications
+
+Att284 <= 32.5 : 2
+Att284 > 32.5 : 2
+Att284 is missing : 2
+
+Class distributions
+
+Att284 <= 32.5
+1	2	
+0.2797704447632712	0.7202295552367288	
+Att284 > 32.5
+1	2	
+0.49657338663620787	0.5034266133637921	
+Att284 is missing
+1	2	
+0.0	1.0	
+
+
+Weight: 0.2
+
+Decision Stump
+
+Classifications
+
+Att841 <= 2047.0 : 1
+Att841 > 2047.0 : 2
+Att841 is missing : 1
+
+Class distributions
+
+Att841 <= 2047.0
+1	2	
+0.5214634146341464	0.47853658536585364	
+Att841 > 2047.0
+1	2	
+0.02	0.98	
+Att841 is missing
+1	2	
+0.5095238095238095	0.49047619047619045	
+
+
+Weight: 0.08
+
+Decision Stump
+
+Classifications
+
+Att1364 <= 5.977325181093948 : 1
+Att1364 > 5.977325181093948 : 2
+Att1364 is missing : 2
+
+Class distributions
+
+Att1364 <= 5.977325181093948
+1	2	
+0.5066178541255985	0.4933821458744016	
+Att1364 > 5.977325181093948
+1	2	
+0.28328173374613	0.7167182662538699	
+Att1364 is missing
+1	2	
+0.0	1.0	
+
+
+Weight: 0.13
+
+Decision Stump
+
+Classifications
+
+Att776 <= 25.5 : 1
+Att776 > 25.5 : 2
+Att776 is missing : 2
+
+Class distributions
+
+Att776 <= 25.5
+1	2	
+0.9642857142857143	0.03571428571428571	
+Att776 > 25.5
+1	2	
+0.44498539435248297	0.555014605647517	
+Att776 is missing
+1	2	
+0.0	1.0	
+
+
+Weight: 0.23
+
+Decision Stump
+
+Classifications
+
+Att452 <= 60.5 : 1
+Att452 > 60.5 : 2
+Att452 is missing : 1
+
+Class distributions
+
+Att452 <= 60.5
+1	2	
+0.533561979421852	0.466438020578148	
+Att452 > 60.5
+1	2	
+0.07758620689655173	0.9224137931034483	
+Att452 is missing
+1	2	
+1.0	0.0	
+
+
+Weight: 0.13
+
+Decision Stump
+
+Classifications
+
+Att486 <= 0.020978038935240972 : 2
+Att486 > 0.020978038935240972 : 1
+Att486 is missing : 2
+
+Class distributions
+
+Att486 <= 0.020978038935240972
+1	2	
+0.36537237428389563	0.6346276257161044	
+Att486 > 0.020978038935240972
+1	2	
+0.5426829268292683	0.4573170731707317	
+Att486 is missing
+1	2	
+0.0	1.0	
+
+
+Weight: 0.28
+
+Decision Stump
+
+Classifications
+
+Att263 <= 52.5 : 1
+Att263 > 52.5 : 2
+Att263 is missing : 2
+
+Class distributions
+
+Att263 <= 52.5
+1	2	
+0.9166666666666666	0.08333333333333333	
+Att263 > 52.5
+1	2	
+0.44613124387855047	0.5538687561214496	
+Att263 is missing
+1	2	
+0.0	1.0	
+
+
+Weight: 0.21
+
+Decision Stump
+
+Classifications
+
+Att623 <= 184.5 : 1
+Att623 > 184.5 : 2
+Att623 is missing : 2
+
+Class distributions
+
+Att623 <= 184.5
+1	2	
+0.5189596499756928	0.48104035002430723	
+Att623 > 184.5
+1	2	
+0.0	1.0	
+Att623 is missing
+1	2	
+0.0	1.0	
+
+
+Weight: 0.12
+
+Decision Stump
+
+Classifications
+
+Att1473 <= 1117.3909181664626 : 1
+Att1473 > 1117.3909181664626 : 2
+Att1473 is missing : 2
+
+Class distributions
+
+Att1473 <= 1117.3909181664626
+1	2	
+0.5208396714329175	0.47916032856708246	
+Att1473 > 1117.3909181664626
+1	2	
+0.32420591456736036	0.6757940854326396	
+Att1473 is missing
+1	2	
+0.4780952380952381	0.5219047619047619	
+
+
+Weight: 0.18
+
+Decision Stump
+
+Classifications
+
+Att254 <= 472.0 : 2
+Att254 > 472.0 : 2
+Att254 is missing : 2
+
+Class distributions
+
+Att254 <= 472.0
+1	2	
+0.4714181464363902	0.5285818535636099	
+Att254 > 472.0
+1	2	
+0.0	1.0	
+Att254 is missing
+1	2	
+0.2857142857142857	0.7142857142857143	
+
+
+Weight: 0.16
+
+Decision Stump
+
+Classifications
+
+Att729 <= 0.013708843791971403 : 2
+Att729 > 0.013708843791971403 : 1
+Att729 is missing : 2
+
+Class distributions
+
+Att729 <= 0.013708843791971403
+1	2	
+0.32751091703056767	0.6724890829694323	
+Att729 > 0.013708843791971403
+1	2	
+0.5412087912087912	0.45879120879120877	
+Att729 is missing
+1	2	
+0.125	0.875	
+
+
+Weight: 0.24
+
+Decision Stump
+
+Classifications
+
+Att470 <= 172.885639418445 : 2
+Att470 > 172.885639418445 : 2
+Att470 is missing : 2
+
+Class distributions
+
+Att470 <= 172.885639418445
+1	2	
+0.494475138121547	0.505524861878453	
+Att470 > 172.885639418445
+1	2	
+0.1339712918660287	0.8660287081339713	
+Att470 is missing
+1	2	
+0.0	1.0	
+
+
+Weight: 0.13
+
+Decision Stump
+
+Classifications
+
+Att1247 <= 2098.5 : 1
+Att1247 > 2098.5 : 2
+Att1247 is missing : 2
+
+Class distributions
+
+Att1247 <= 2098.5
+1	2	
+0.5098997800048888	0.4901002199951112	
+Att1247 > 2098.5
+1	2	
+0.028037383177570093	0.9719626168224299	
+Att1247 is missing
+1	2	
+0.0	1.0	
+
+
+Weight: 0.08
+
+Decision Stump
+
+Classifications
+
+Att452 <= 60.5 : 2
+Att452 > 60.5 : 2
+Att452 is missing : 1
+
+Class distributions
+
+Att452 <= 60.5
+1	2	
+0.4941002949852507	0.5058997050147492	
+Att452 > 60.5
+1	2	
+0.030534351145038167	0.9694656488549618	
+Att452 is missing
+1	2	
+1.0	0.0	
+
+
+Weight: 0.08
+
+Decision Stump
+
+Classifications
+
+Att452 <= 60.5 : 1
+Att452 > 60.5 : 2
+Att452 is missing : 1
+
+Class distributions
+
+Att452 <= 60.5
+1	2	
+0.5112579539892316	0.4887420460107685	
+Att452 > 60.5
+1	2	
+0.06306306306306306	0.9369369369369369	
+Att452 is missing
+1	2	
+1.0	0.0	
+
+
+Weight: 0.08
+
+Decision Stump
+
+Classifications
+
+Att1707 <= 5.9944289842119 : 1
+Att1707 > 5.9944289842119 : 2
+Att1707 is missing : 2
+
+Class distributions
+
+Att1707 <= 5.9944289842119
+1	2	
+0.5144694533762058	0.4855305466237942	
+Att1707 > 5.9944289842119
+1	2	
+0.24086021505376345	0.7591397849462366	
+Att1707 is missing
+1	2	
+0.3333333333333333	0.6666666666666666	
+
+
+Weight: 0.11
+
+Decision Stump
+
+Classifications
+
+Att1161 <= 41.5 : 2
+Att1161 > 41.5 : 2
+Att1161 is missing : 2
+
+Class distributions
+
+Att1161 <= 41.5
+1	2	
+0.019230769230769232	0.9807692307692307	
+Att1161 > 41.5
+1	2	
+0.4576312576312576	0.5423687423687423	
+Att1161 is missing
+1	2	
+0.0	1.0	
+
+
+Weight: 0.17
+
+Decision Stump
+
+Classifications
+
+Att1355 <= 144.5 : 1
+Att1355 > 144.5 : 2
+Att1355 is missing : 1
+
+Class distributions
+
+Att1355 <= 144.5
+1	2	
+0.5261851576073467	0.47381484239265326	
+Att1355 > 144.5
+1	2	
+0.1377245508982036	0.8622754491017964	
+Att1355 is missing
+1	2	
+1.0	0.0	
+
+
+Weight: 0.08
+
+Decision Stump
+
+Classifications
+
+Att1609 <= 27.5 : 2
+Att1609 > 27.5 : 2
+Att1609 is missing : 2
+
+Class distributions
+
+Att1609 <= 27.5
+1	2	
+0.21172638436482086	0.7882736156351792	
+Att1609 > 27.5
+1	2	
+0.4980714836718951	0.5019285163281049	
+Att1609 is missing
+1	2	
+0.0	1.0	
+
+
+Weight: 0.08
+
+Decision Stump
+
+Classifications
+
+Att1856 <= 110.5 : 1
+Att1856 > 110.5 : 2
+Att1856 is missing : 2
+
+Class distributions
+
+Att1856 <= 110.5
+1	2	
+0.5160878447395302	0.4839121552604699	
+Att1856 > 110.5
+1	2	
+0.199288256227758	0.800711743772242	
+Att1856 is missing
+1	2	
+0.0	1.0	
+
+
+Weight: 0.13
+
+Decision Stump
+
+Classifications
+
+Att56 <= 16.002416700918058 : 2
+Att56 > 16.002416700918058 : 1
+Att56 is missing : 2
+
+Class distributions
+
+Att56 <= 16.002416700918058
+1	2	
+0.4074656188605108	0.5925343811394892	
+Att56 > 16.002416700918058
+1	2	
+0.5812688821752265	0.4187311178247734	
+Att56 is missing
+1	2	
+0.47595238095238096	0.5240476190476191	
+
+
+Weight: 0.27
+
+Decision Stump
+
+Classifications
+
+Att470 <= 172.885639418445 : 1
+Att470 > 172.885639418445 : 2
+Att470 is missing : 2
+
+Class distributions
+
+Att470 <= 172.885639418445
+1	2	
+0.507503751875938	0.492496248124062	
+Att470 > 172.885639418445
+1	2	
+0.16666666666666666	0.8333333333333334	
+Att470 is missing
+1	2	
+0.0	1.0	
+
+
+Weight: 0.07
+
+Decision Stump
+
+Classifications
+
+Att729 <= 5.942466550172194 : 2
+Att729 > 5.942466550172194 : 2
+Att729 is missing : 1
+
+Class distributions
+
+Att729 <= 5.942466550172194
+1	2	
+0.4968087822312995	0.5031912177687006	
+Att729 > 5.942466550172194
+1	2	
+0.1781818181818182	0.8218181818181818	
+Att729 is missing
+1	2	
+0.625	0.375	
+
+
+Weight: 0.11
+
+Decision Stump
+
+Classifications
+
+Att841 <= 1969.5 : 1
+Att841 > 1969.5 : 2
+Att841 is missing : 2
+
+Class distributions
+
+Att841 <= 1969.5
+1	2	
+0.5106958446029014	0.4893041553970986	
+Att841 > 1969.5
+1	2	
+0.06060606060606061	0.9393939393939394	
+Att841 is missing
+1	2	
+0.0	1.0	
+
+
+Weight: 0.07
+
+Decision Stump
+
+Classifications
+
+Att1178 <= 55.5 : 1
+Att1178 > 55.5 : 2
+Att1178 is missing : 1
+
+Class distributions
+
+Att1178 <= 55.5
+1	2	
+0.8229166666666666	0.17708333333333334	
+Att1178 > 55.5
+1	2	
+0.4620569146280579	0.5379430853719421	
+Att1178 is missing
+1	2	
+0.5	0.5	
+
+
+Weight: 0.15
+
+Decision Stump
+
+Classifications
+
+Att915 <= 200.82343079577737 : 1
+Att915 > 200.82343079577737 : 2
+Att915 is missing : 2
+
+Class distributions
+
+Att915 <= 200.82343079577737
+1	2	
+0.5341662417134115	0.46583375828658846	
+Att915 > 200.82343079577737
+1	2	
+0.20363636363636364	0.7963636363636364	
+Att915 is missing
+1	2	
+0.0	1.0	
+
+
+Weight: 0.17
+
+Decision Stump
+
+Classifications
+
+Att585 <= 3.9832588503390856 : 1
+Att585 > 3.9832588503390856 : 2
+Att585 is missing : 2
+
+Class distributions
+
+Att585 <= 3.9832588503390856
+1	2	
+0.5361625821876868	0.4638374178123132	
+Att585 > 3.9832588503390856
+1	2	
+0.30859835100117783	0.6914016489988222	
+Att585 is missing
+1	2	
+0.0	1.0	
+
+
+Weight: 0.16
+
+Decision Stump
+
+Classifications
+
+Att254 <= 469.5 : 2
+Att254 > 469.5 : 2
+Att254 is missing : 1
+
+Class distributions
+
+Att254 <= 469.5
+1	2	
+0.47446498054474706	0.5255350194552529	
+Att254 > 469.5
+1	2	
+0.0	1.0	
+Att254 is missing
+1	2	
+0.5	0.5	
+
+
+Weight: 0.18
+
+Decision Stump
+
+Classifications
+
+Att358 <= 16.002014878053846 : 2
+Att358 > 16.002014878053846 : 1
+Att358 is missing : 1
+
+Class distributions
+
+Att358 <= 16.002014878053846
+1	2	
+0.45385779122541603	0.546142208774584	
+Att358 > 16.002014878053846
+1	2	
+0.6539753639417694	0.3460246360582307	
+Att358 is missing
+1	2	
+1.0	0.0	
+
+
+Weight: 0.24
+
+Decision Stump
+
+Classifications
+
+Att1098 <= 14.5 : 2
+Att1098 > 14.5 : 1
+Att1098 is missing : 1
+
+Class distributions
+
+Att1098 <= 14.5
+1	2	
+0.193717277486911	0.806282722513089	
+Att1098 > 14.5
+1	2	
+0.5525	0.4475	
+Att1098 is missing
+1	2	
+1.0	0.0	
+
+
+Weight: 0.23
+
+Decision Stump
+
+Classifications
+
+Att225 <= 15.991335154780044 : 1
+Att225 > 15.991335154780044 : 2
+Att225 is missing : 2
+
+Class distributions
+
+Att225 <= 15.991335154780044
+1	2	
+0.6168539325842697	0.3831460674157303	
+Att225 > 15.991335154780044
+1	2	
+0.4307411907654921	0.5692588092345079	
+Att225 is missing
+1	2	
+0.0	1.0	
+
+
+Weight: 0.25
+
+Decision Stump
+
+Classifications
+
+Att254 <= 508.5 : 1
+Att254 > 508.5 : 2
+Att254 is missing : 2
+
+Class distributions
+
+Att254 <= 508.5
+1	2	
+0.5233939393939394	0.4766060606060606	
+Att254 > 508.5
+1	2	
+0.0	1.0	
+Att254 is missing
+1	2	
+0.3333333333333333	0.6666666666666666	
+
+
+Weight: 0.14
+
+Decision Stump
+
+Classifications
+
+Att1706 <= 15.018676384157406 : 2
+Att1706 > 15.018676384157406 : 1
+Att1706 is missing : 2
+
+Class distributions
+
+Att1706 <= 15.018676384157406
+1	2	
+0.2967409948542024	0.7032590051457976	
+Att1706 > 15.018676384157406
+1	2	
+0.5108273181565797	0.48917268184342033	
+Att1706 is missing
+1	2	
+0.4666666666666667	0.5333333333333333	
+
+
+Weight: 0.13
+
+Decision Stump
+
+Classifications
+
+Att1098 <= 1786.0 : 2
+Att1098 > 1786.0 : 2
+Att1098 is missing : 1
+
+Class distributions
+
+Att1098 <= 1786.0
+1	2	
+0.4740518962075848	0.5259481037924152	
+Att1098 > 1786.0
+1	2	
+0.13440860215053763	0.8655913978494624	
+Att1098 is missing
+1	2	
+1.0	0.0	
+
+
+Weight: 0.16
+
+Decision Stump
+
+Classifications
+
+Att1757 <= 63.9913796935589 : 1
+Att1757 > 63.9913796935589 : 2
+Att1757 is missing : 1
+
+Class distributions
+
+Att1757 <= 63.9913796935589
+1	2	
+0.5294431121769251	0.47055688782307487	
+Att1757 > 63.9913796935589
+1	2	
+0.2866817155756208	0.7133182844243793	
+Att1757 is missing
+1	2	
+1.0	0.0	
+
+
+Weight: 0.13
+
+Decision Stump
+
+Classifications
+
+Att1868 <= 4060.0 : 2
+Att1868 > 4060.0 : 2
+Att1868 is missing : 2
+
+Class distributions
+
+Att1868 <= 4060.0
+1	2	
+0.4878581835842642	0.5121418164157358	
+Att1868 > 4060.0
+1	2	
+0.0	1.0	
+Att1868 is missing
+1	2	
+0.47833333333333333	0.5216666666666666	
+
+
+Weight: 0.1
+
+Decision Stump
+
+Classifications
+
+Att746 <= 15.027091692332647 : 2
+Att746 > 15.027091692332647 : 1
+Att746 is missing : 2
+
+Class distributions
+
+Att746 <= 15.027091692332647
+1	2	
+0.18442622950819673	0.8155737704918032	
+Att746 > 15.027091692332647
+1	2	
+0.5141557128412538	0.4858442871587462	
+Att746 is missing
+1	2	
+0.495	0.505	
+
+
+Weight: 0.11
+
+Decision Stump
+
+Classifications
+
+Att729 <= 5.942466550172194 : 2
+Att729 > 5.942466550172194 : 2
+Att729 is missing : 2
+
+Class distributions
+
+Att729 <= 5.942466550172194
+1	2	
+0.49746063991874045	0.5025393600812595	
+Att729 > 5.942466550172194
+1	2	
+0.16279069767441862	0.8372093023255814	
+Att729 is missing
+1	2	
+0.25	0.75	
+
+
+Weight: 0.1
+
+Number of performed Iterations: 96
+
+
+Cost Matrix
+ 0 2
+ 1 0
+
+
+Time taken to build model: 131.74 seconds
+
+=== Predictions on test split ===
+
+inst#,    actual, predicted, error, probability distribution
+     1        1:1        1:1         *1      0    
+     2        1:1        2:2      +   0     *1    
+     3        1:1        2:2      +   0     *1    
+     4        1:1        1:1         *1      0    
+     5        1:1        1:1         *1      0    
+     6        1:1        2:2      +   0     *1    
+     7        1:1        2:2      +   0     *1    
+     8        1:1        2:2      +   0     *1    
+     9        1:1        2:2      +   0     *1    
+    10        1:1        2:2      +   0     *1    
+    11        1:1        2:2      +   0     *1    
+    12        1:1        2:2      +   0     *1    
+    13        1:1        2:2      +   0     *1    
+    14        1:1        2:2      +   0     *1    
+    15        1:1        1:1         *1      0    
+    16        1:1        2:2      +   0     *1    
+    17        1:1        2:2      +   0     *1    
+    18        1:1        1:1         *1      0    
+    19        1:1        1:1         *1      0    
+    20        1:1        1:1         *1      0    
+    21        1:1        2:2      +   0     *1    
+    22        1:1        2:2      +   0     *1    
+    23        1:1        2:2      +   0     *1    
+    24        1:1        2:2      +   0     *1    
+    25        1:1        2:2      +   0     *1    
+    26        1:1        2:2      +   0     *1    
+    27        1:1        2:2      +   0     *1    
+    28        1:1        2:2      +   0     *1    
+    29        1:1        2:2      +   0     *1    
+    30        1:1        2:2      +   0     *1    
+    31        1:1        2:2      +   0     *1    
+    32        1:1        2:2      +   0     *1    
+    33        1:1        2:2      +   0     *1    
+    34        1:1        1:1         *1      0    
+    35        1:1        2:2      +   0     *1    
+    36        1:1        1:1         *1      0    
+    37        1:1        1:1         *1      0    
+    38        1:1        2:2      +   0     *1    
+    39        1:1        2:2      +   0     *1    
+    40        1:1        2:2      +   0     *1    
+    41        1:1        1:1         *1      0    
+    42        1:1        2:2      +   0     *1    
+    43        1:1        2:2      +   0     *1    
+    44        1:1        2:2      +   0     *1    
+    45        1:1        2:2      +   0     *1    
+    46        1:1        1:1         *1      0    
+    47        1:1        1:1         *1      0    
+    48        1:1        2:2      +   0     *1    
+    49        1:1        1:1         *1      0    
+    50        1:1        2:2      +   0     *1    
+    51        1:1        2:2      +   0     *1    
+    52        1:1        2:2      +   0     *1    
+    53        1:1        2:2      +   0     *1    
+    54        1:1        2:2      +   0     *1    
+    55        1:1        2:2      +   0     *1    
+    56        1:1        2:2      +   0     *1    
+    57        1:1        2:2      +   0     *1    
+    58        1:1        2:2      +   0     *1    
+    59        1:1        2:2      +   0     *1    
+    60        1:1        2:2      +   0     *1    
+    61        1:1        2:2      +   0     *1    
+    62        1:1        2:2      +   0     *1    
+    63        1:1        2:2      +   0     *1    
+    64        1:1        1:1         *1      0    
+    65        1:1        1:1         *1      0    
+    66        1:1        2:2      +   0     *1    
+    67        1:1        2:2      +   0     *1    
+    68        1:1        2:2      +   0     *1    
+    69        1:1        2:2      +   0     *1    
+    70        1:1        2:2      +   0     *1    
+    71        1:1        2:2      +   0     *1    
+    72        1:1        1:1         *1      0    
+    73        1:1        2:2      +   0     *1    
+    74        1:1        2:2      +   0     *1    
+    75        1:1        2:2      +   0     *1    
+    76        1:1        2:2      +   0     *1    
+    77        1:1        2:2      +   0     *1    
+    78        1:1        2:2      +   0     *1    
+    79        1:1        2:2      +   0     *1    
+    80        1:1        2:2      +   0     *1    
+    81        1:1        2:2      +   0     *1    
+    82        1:1        1:1         *1      0    
+    83        1:1        2:2      +   0     *1    
+    84        1:1        1:1         *1      0    
+    85        1:1        2:2      +   0     *1    
+    86        1:1        2:2      +   0     *1    
+    87        1:1        2:2      +   0     *1    
+    88        1:1        2:2      +   0     *1    
+    89        1:1        2:2      +   0     *1    
+    90        1:1        1:1         *1      0    
+    91        1:1        1:1         *1      0    
+    92        1:1        1:1         *1      0    
+    93        1:1        2:2      +   0     *1    
+    94        1:1        2:2      +   0     *1    
+    95        1:1        2:2      +   0     *1    
+    96        1:1        2:2      +   0     *1    
+    97        1:1        1:1         *1      0    
+    98        1:1        2:2      +   0     *1    
+    99        1:1        2:2      +   0     *1    
+   100        1:1        2:2      +   0     *1    
+   101        1:1        1:1         *1      0    
+   102        1:1        2:2      +   0     *1    
+   103        1:1        2:2      +   0     *1    
+   104        1:1        2:2      +   0     *1    
+   105        1:1        2:2      +   0     *1    
+   106        1:1        2:2      +   0     *1    
+   107        1:1        2:2      +   0     *1    
+   108        1:1        1:1         *1      0    
+   109        1:1        1:1         *1      0    
+   110        1:1        1:1         *1      0    
+   111        1:1        2:2      +   0     *1    
+   112        1:1        2:2      +   0     *1    
+   113        1:1        2:2      +   0     *1    
+   114        1:1        1:1         *1      0    
+   115        1:1        2:2      +   0     *1    
+   116        1:1        2:2      +   0     *1    
+   117        1:1        2:2      +   0     *1    
+   118        1:1        2:2      +   0     *1    
+   119        1:1        2:2      +   0     *1    
+   120        1:1        2:2      +   0     *1    
+   121        1:1        2:2      +   0     *1    
+   122        1:1        2:2      +   0     *1    
+   123        1:1        2:2      +   0     *1    
+   124        1:1        2:2      +   0     *1    
+   125        1:1        2:2      +   0     *1    
+   126        1:1        2:2      +   0     *1    
+   127        1:1        2:2      +   0     *1    
+   128        1:1        2:2      +   0     *1    
+   129        1:1        2:2      +   0     *1    
+   130        1:1        2:2      +   0     *1    
+   131        1:1        2:2      +   0     *1    
+   132        1:1        2:2      +   0     *1    
+   133        1:1        1:1         *1      0    
+   134        1:1        1:1         *1      0    
+   135        1:1        2:2      +   0     *1    
+   136        1:1        2:2      +   0     *1    
+   137        1:1        1:1         *1      0    
+   138        1:1        1:1         *1      0    
+   139        1:1        2:2      +   0     *1    
+   140        1:1        1:1         *1      0    
+   141        1:1        1:1         *1      0    
+   142        1:1        2:2      +   0     *1    
+   143        1:1        2:2      +   0     *1    
+   144        1:1        2:2      +   0     *1    
+   145        1:1        2:2      +   0     *1    
+   146        1:1        2:2      +   0     *1    
+   147        1:1        2:2      +   0     *1    
+   148        1:1        1:1         *1      0    
+   149        1:1        2:2      +   0     *1    
+   150        1:1        2:2      +   0     *1    
+   151        1:1        2:2      +   0     *1    
+   152        1:1        1:1         *1      0    
+   153        1:1        2:2      +   0     *1    
+   154        1:1        2:2      +   0     *1    
+   155        1:1        1:1         *1      0    
+   156        1:1        2:2      +   0     *1    
+   157        1:1        2:2      +   0     *1    
+   158        1:1        2:2      +   0     *1    
+   159        1:1        1:1         *1      0    
+   160        1:1        2:2      +   0     *1    
+   161        1:1        1:1         *1      0    
+   162        1:1        2:2      +   0     *1    
+   163        1:1        2:2      +   0     *1    
+   164        1:1        2:2      +   0     *1    
+   165        1:1        2:2      +   0     *1    
+   166        1:1        2:2      +   0     *1    
+   167        1:1        2:2      +   0     *1    
+   168        1:1        2:2      +   0     *1    
+   169        1:1        1:1         *1      0    
+   170        1:1        1:1         *1      0    
+   171        1:1        2:2      +   0     *1    
+   172        1:1        1:1         *1      0    
+   173        1:1        1:1         *1      0    
+   174        1:1        2:2      +   0     *1    
+   175        1:1        2:2      +   0     *1    
+   176        1:1        1:1         *1      0    
+   177        1:1        2:2      +   0     *1    
+   178        1:1        2:2      +   0     *1    
+   179        1:1        2:2      +   0     *1    
+   180        1:1        2:2      +   0     *1    
+   181        1:1        2:2      +   0     *1    
+   182        1:1        2:2      +   0     *1    
+   183        1:1        2:2      +   0     *1    
+   184        1:1        2:2      +   0     *1    
+   185        1:1        2:2      +   0     *1    
+   186        1:1        2:2      +   0     *1    
+   187        1:1        2:2      +   0     *1    
+   188        1:1        1:1         *1      0    
+   189        1:1        2:2      +   0     *1    
+   190        1:1        2:2      +   0     *1    
+   191        1:1        2:2      +   0     *1    
+   192        1:1        2:2      +   0     *1    
+   193        1:1        1:1         *1      0    
+   194        1:1        2:2      +   0     *1    
+   195        1:1        2:2      +   0     *1    
+   196        1:1        2:2      +   0     *1    
+   197        1:1        2:2      +   0     *1    
+   198        1:1        1:1         *1      0    
+   199        1:1        2:2      +   0     *1    
+   200        1:1        1:1         *1      0    
+   201        1:1        2:2      +   0     *1    
+   202        1:1        2:2      +   0     *1    
+   203        1:1        1:1         *1      0    
+   204        1:1        2:2      +   0     *1    
+   205        1:1        2:2      +   0     *1    
+   206        1:1        2:2      +   0     *1    
+   207        1:1        1:1         *1      0    
+   208        1:1        2:2      +   0     *1    
+   209        1:1        2:2      +   0     *1    
+   210        1:1        2:2      +   0     *1    
+   211        1:1        2:2      +   0     *1    
+   212        1:1        1:1         *1      0    
+   213        1:1        2:2      +   0     *1    
+   214        1:1        2:2      +   0     *1    
+   215        1:1        2:2      +   0     *1    
+   216        1:1        2:2      +   0     *1    
+   217        1:1        2:2      +   0     *1    
+   218        1:1        2:2      +   0     *1    
+   219        1:1        2:2      +   0     *1    
+   220        1:1        1:1         *1      0    
+   221        1:1        2:2      +   0     *1    
+   222        1:1        1:1         *1      0    
+   223        1:1        2:2      +   0     *1    
+   224        1:1        2:2      +   0     *1    
+   225        1:1        1:1         *1      0    
+   226        1:1        1:1         *1      0    
+   227        1:1        1:1         *1      0    
+   228        1:1        2:2      +   0     *1    
+   229        1:1        2:2      +   0     *1    
+   230        1:1        2:2      +   0     *1    
+   231        1:1        1:1         *1      0    
+   232        1:1        2:2      +   0     *1    
+   233        1:1        2:2      +   0     *1    
+   234        1:1        2:2      +   0     *1    
+   235        1:1        1:1         *1      0    
+   236        1:1        2:2      +   0     *1    
+   237        1:1        2:2      +   0     *1    
+   238        1:1        2:2      +   0     *1    
+   239        1:1        2:2      +   0     *1    
+   240        1:1        2:2      +   0     *1    
+   241        1:1        2:2      +   0     *1    
+   242        1:1        1:1         *1      0    
+   243        1:1        2:2      +   0     *1    
+   244        1:1        1:1         *1      0    
+   245        1:1        2:2      +   0     *1    
+   246        1:1        1:1         *1      0    
+   247        1:1        2:2      +   0     *1    
+   248        1:1        2:2      +   0     *1    
+   249        1:1        2:2      +   0     *1    
+   250        1:1        1:1         *1      0    
+   251        1:1        2:2      +   0     *1    
+   252        1:1        1:1         *1      0    
+   253        1:1        2:2      +   0     *1    
+   254        1:1        2:2      +   0     *1    
+   255        1:1        2:2      +   0     *1    
+   256        1:1        2:2      +   0     *1    
+   257        1:1        2:2      +   0     *1    
+   258        1:1        2:2      +   0     *1    
+   259        1:1        2:2      +   0     *1    
+   260        1:1        2:2      +   0     *1    
+   261        1:1        2:2      +   0     *1    
+   262        1:1        2:2      +   0     *1    
+   263        1:1        2:2      +   0     *1    
+   264        1:1        2:2      +   0     *1    
+   265        1:1        1:1         *1      0    
+   266        1:1        2:2      +   0     *1    
+   267        1:1        1:1         *1      0    
+   268        1:1        2:2      +   0     *1    
+   269        1:1        2:2      +   0     *1    
+   270        1:1        1:1         *1      0    
+   271        1:1        1:1         *1      0    
+   272        1:1        2:2      +   0     *1    
+   273        1:1        1:1         *1      0    
+   274        1:1        1:1         *1      0    
+   275        1:1        2:2      +   0     *1    
+   276        1:1        2:2      +   0     *1    
+   277        1:1        2:2      +   0     *1    
+   278        1:1        2:2      +   0     *1    
+   279        1:1        2:2      +   0     *1    
+   280        1:1        2:2      +   0     *1    
+   281        1:1        2:2      +   0     *1    
+   282        1:1        2:2      +   0     *1    
+   283        1:1        1:1         *1      0    
+   284        1:1        1:1         *1      0    
+   285        1:1        2:2      +   0     *1    
+   286        1:1        2:2      +   0     *1    
+   287        1:1        2:2      +   0     *1    
+   288        1:1        2:2      +   0     *1    
+   289        1:1        2:2      +   0     *1    
+   290        1:1        2:2      +   0     *1    
+   291        1:1        2:2      +   0     *1    
+   292        1:1        2:2      +   0     *1    
+   293        1:1        2:2      +   0     *1    
+   294        1:1        2:2      +   0     *1    
+   295        1:1        1:1         *1      0    
+   296        1:1        2:2      +   0     *1    
+   297        1:1        2:2      +   0     *1    
+   298        1:1        2:2      +   0     *1    
+   299        1:1        2:2      +   0     *1    
+   300        1:1        2:2      +   0     *1    
+   301        1:1        2:2      +   0     *1    
+   302        1:1        2:2      +   0     *1    
+   303        1:1        2:2      +   0     *1    
+   304        1:1        2:2      +   0     *1    
+   305        1:1        2:2      +   0     *1    
+   306        1:1        2:2      +   0     *1    
+   307        1:1        2:2      +   0     *1    
+   308        1:1        2:2      +   0     *1    
+   309        1:1        1:1         *1      0    
+   310        1:1        2:2      +   0     *1    
+   311        1:1        1:1         *1      0    
+   312        1:1        2:2      +   0     *1    
+   313        1:1        2:2      +   0     *1    
+   314        1:1        1:1         *1      0    
+   315        1:1        1:1         *1      0    
+   316        1:1        1:1         *1      0    
+   317        1:1        2:2      +   0     *1    
+   318        1:1        2:2      +   0     *1    
+   319        1:1        2:2      +   0     *1    
+   320        1:1        2:2      +   0     *1    
+   321        1:1        2:2      +   0     *1    
+   322        1:1        2:2      +   0     *1    
+   323        1:1        2:2      +   0     *1    
+   324        1:1        2:2      +   0     *1    
+   325        1:1        1:1         *1      0    
+   326        1:1        2:2      +   0     *1    
+   327        1:1        2:2      +   0     *1    
+   328        1:1        2:2      +   0     *1    
+   329        1:1        2:2      +   0     *1    
+   330        1:1        1:1         *1      0    
+   331        1:1        2:2      +   0     *1    
+   332        1:1        2:2      +   0     *1    
+   333        1:1        2:2      +   0     *1    
+   334        1:1        2:2      +   0     *1    
+   335        1:1        2:2      +   0     *1    
+   336        1:1        1:1         *1      0    
+   337        1:1        2:2      +   0     *1    
+   338        1:1        2:2      +   0     *1    
+   339        1:1        1:1         *1      0    
+   340        1:1        2:2      +   0     *1    
+   341        1:1        2:2      +   0     *1    
+   342        1:1        2:2      +   0     *1    
+   343        1:1        1:1         *1      0    
+   344        1:1        2:2      +   0     *1    
+   345        1:1        2:2      +   0     *1    
+   346        1:1        2:2      +   0     *1    
+   347        1:1        2:2      +   0     *1    
+   348        1:1        1:1         *1      0    
+   349        1:1        2:2      +   0     *1    
+   350        1:1        2:2      +   0     *1    
+   351        1:1        1:1         *1      0    
+   352        1:1        1:1         *1      0    
+   353        1:1        2:2      +   0     *1    
+   354        1:1        1:1         *1      0    
+   355        1:1        1:1         *1      0    
+   356        1:1        2:2      +   0     *1    
+   357        1:1        2:2      +   0     *1    
+   358        1:1        2:2      +   0     *1    
+   359        1:1        2:2      +   0     *1    
+   360        1:1        2:2      +   0     *1    
+   361        1:1        2:2      +   0     *1    
+   362        1:1        2:2      +   0     *1    
+   363        1:1        2:2      +   0     *1    
+   364        1:1        2:2      +   0     *1    
+   365        1:1        2:2      +   0     *1    
+   366        1:1        2:2      +   0     *1    
+   367        1:1        2:2      +   0     *1    
+   368        1:1        2:2      +   0     *1    
+   369        1:1        1:1         *1      0    
+   370        1:1        2:2      +   0     *1    
+   371        1:1        2:2      +   0     *1    
+   372        1:1        1:1         *1      0    
+   373        1:1        2:2      +   0     *1    
+   374        1:1        2:2      +   0     *1    
+   375        1:1        2:2      +   0     *1    
+   376        1:1        1:1         *1      0    
+   377        1:1        2:2      +   0     *1    
+   378        1:1        2:2      +   0     *1    
+   379        1:1        2:2      +   0     *1    
+   380        1:1        1:1         *1      0    
+   381        1:1        2:2      +   0     *1    
+   382        1:1        2:2      +   0     *1    
+   383        1:1        2:2      +   0     *1    
+   384        1:1        1:1         *1      0    
+   385        1:1        2:2      +   0     *1    
+   386        1:1        1:1         *1      0    
+   387        1:1        2:2      +   0     *1    
+   388        1:1        1:1         *1      0    
+   389        1:1        2:2      +   0     *1    
+   390        1:1        1:1         *1      0    
+   391        1:1        2:2      +   0     *1    
+   392        1:1        1:1         *1      0    
+   393        1:1        2:2      +   0     *1    
+   394        1:1        2:2      +   0     *1    
+   395        1:1        1:1         *1      0    
+   396        1:1        2:2      +   0     *1    
+   397        1:1        2:2      +   0     *1    
+   398        1:1        1:1         *1      0    
+   399        1:1        2:2      +   0     *1    
+   400        1:1        2:2      +   0     *1    
+   401        1:1        2:2      +   0     *1    
+   402        1:1        1:1         *1      0    
+   403        1:1        2:2      +   0     *1    
+   404        1:1        2:2      +   0     *1    
+   405        1:1        2:2      +   0     *1    
+   406        1:1        1:1         *1      0    
+   407        1:1        2:2      +   0     *1    
+   408        1:1        1:1         *1      0    
+   409        1:1        2:2      +   0     *1    
+   410        1:1        2:2      +   0     *1    
+   411        1:1        2:2      +   0     *1    
+   412        1:1        2:2      +   0     *1    
+   413        1:1        2:2      +   0     *1    
+   414        1:1        1:1         *1      0    
+   415        1:1        2:2      +   0     *1    
+   416        1:1        2:2      +   0     *1    
+   417        1:1        1:1         *1      0    
+   418        1:1        2:2      +   0     *1    
+   419        1:1        2:2      +   0     *1    
+   420        1:1        2:2      +   0     *1    
+   421        1:1        2:2      +   0     *1    
+   422        1:1        2:2      +   0     *1    
+   423        1:1        2:2      +   0     *1    
+   424        1:1        2:2      +   0     *1    
+   425        1:1        1:1         *1      0    
+   426        1:1        2:2      +   0     *1    
+   427        1:1        1:1         *1      0    
+   428        1:1        2:2      +   0     *1    
+   429        1:1        2:2      +   0     *1    
+   430        1:1        2:2      +   0     *1    
+   431        1:1        2:2      +   0     *1    
+   432        1:1        2:2      +   0     *1    
+   433        1:1        2:2      +   0     *1    
+   434        1:1        1:1         *1      0    
+   435        1:1        2:2      +   0     *1    
+   436        1:1        2:2      +   0     *1    
+   437        1:1        2:2      +   0     *1    
+   438        1:1        2:2      +   0     *1    
+   439        1:1        2:2      +   0     *1    
+   440        1:1        2:2      +   0     *1    
+   441        1:1        2:2      +   0     *1    
+   442        1:1        1:1         *1      0    
+   443        1:1        2:2      +   0     *1    
+   444        1:1        2:2      +   0     *1    
+   445        1:1        2:2      +   0     *1    
+   446        1:1        2:2      +   0     *1    
+   447        1:1        2:2      +   0     *1    
+   448        1:1        2:2      +   0     *1    
+   449        1:1        2:2      +   0     *1    
+   450        1:1        1:1         *1      0    
+   451        1:1        2:2      +   0     *1    
+   452        1:1        2:2      +   0     *1    
+   453        1:1        2:2      +   0     *1    
+   454        1:1        1:1         *1      0    
+   455        1:1        2:2      +   0     *1    
+   456        1:1        2:2      +   0     *1    
+   457        1:1        1:1         *1      0    
+   458        1:1        1:1         *1      0    
+   459        1:1        1:1         *1      0    
+   460        1:1        2:2      +   0     *1    
+   461        1:1        2:2      +   0     *1    
+   462        1:1        2:2      +   0     *1    
+   463        1:1        2:2      +   0     *1    
+   464        1:1        1:1         *1      0    
+   465        1:1        2:2      +   0     *1    
+   466        1:1        1:1         *1      0    
+   467        1:1        1:1         *1      0    
+   468        1:1        2:2      +   0     *1    
+   469        1:1        2:2      +   0     *1    
+   470        1:1        2:2      +   0     *1    
+   471        1:1        2:2      +   0     *1    
+   472        1:1        2:2      +   0     *1    
+   473        1:1        2:2      +   0     *1    
+   474        1:1        2:2      +   0     *1    
+   475        1:1        2:2      +   0     *1    
+   476        1:1        2:2      +   0     *1    
+   477        1:1        2:2      +   0     *1    
+   478        1:1        2:2      +   0     *1    
+   479        1:1        1:1         *1      0    
+   480        1:1        2:2      +   0     *1    
+   481        1:1        2:2      +   0     *1    
+   482        1:1        1:1         *1      0    
+   483        1:1        2:2      +   0     *1    
+   484        1:1        1:1         *1      0    
+   485        1:1        1:1         *1      0    
+   486        1:1        1:1         *1      0    
+   487        1:1        1:1         *1      0    
+   488        1:1        2:2      +   0     *1    
+   489        1:1        2:2      +   0     *1    
+   490        1:1        2:2      +   0     *1    
+   491        1:1        2:2      +   0     *1    
+   492        1:1        2:2      +   0     *1    
+   493        1:1        1:1         *1      0    
+   494        1:1        2:2      +   0     *1    
+   495        1:1        2:2      +   0     *1    
+   496        1:1        1:1         *1      0    
+   497        1:1        1:1         *1      0    
+   498        1:1        2:2      +   0     *1    
+   499        1:1        2:2      +   0     *1    
+   500        1:1        2:2      +   0     *1    
+   501        1:1        2:2      +   0     *1    
+   502        1:1        2:2      +   0     *1    
+   503        1:1        2:2      +   0     *1    
+   504        1:1        1:1         *1      0    
+   505        1:1        2:2      +   0     *1    
+   506        1:1        2:2      +   0     *1    
+   507        1:1        1:1         *1      0    
+   508        1:1        2:2      +   0     *1    
+   509        1:1        2:2      +   0     *1    
+   510        1:1        2:2      +   0     *1    
+   511        1:1        2:2      +   0     *1    
+   512        1:1        2:2      +   0     *1    
+   513        1:1        2:2      +   0     *1    
+   514        1:1        2:2      +   0     *1    
+   515        1:1        1:1         *1      0    
+   516        1:1        2:2      +   0     *1    
+   517        1:1        2:2      +   0     *1    
+   518        1:1        2:2      +   0     *1    
+   519        1:1        1:1         *1      0    
+   520        1:1        2:2      +   0     *1    
+   521        1:1        2:2      +   0     *1    
+   522        1:1        2:2      +   0     *1    
+   523        1:1        2:2      +   0     *1    
+   524        1:1        2:2      +   0     *1    
+   525        1:1        2:2      +   0     *1    
+   526        1:1        2:2      +   0     *1    
+   527        1:1        2:2      +   0     *1    
+   528        1:1        2:2      +   0     *1    
+   529        1:1        1:1         *1      0    
+   530        1:1        2:2      +   0     *1    
+   531        1:1        2:2      +   0     *1    
+   532        1:1        2:2      +   0     *1    
+   533        1:1        2:2      +   0     *1    
+   534        1:1        1:1         *1      0    
+   535        1:1        2:2      +   0     *1    
+   536        1:1        1:1         *1      0    
+   537        1:1        2:2      +   0     *1    
+   538        1:1        2:2      +   0     *1    
+   539        1:1        2:2      +   0     *1    
+   540        1:1        2:2      +   0     *1    
+   541        1:1        2:2      +   0     *1    
+   542        1:1        2:2      +   0     *1    
+   543        1:1        2:2      +   0     *1    
+   544        1:1        2:2      +   0     *1    
+   545        1:1        1:1         *1      0    
+   546        1:1        2:2      +   0     *1    
+   547        1:1        2:2      +   0     *1    
+   548        1:1        2:2      +   0     *1    
+   549        1:1        2:2      +   0     *1    
+   550        1:1        2:2      +   0     *1    
+   551        1:1        2:2      +   0     *1    
+   552        1:1        1:1         *1      0    
+   553        1:1        1:1         *1      0    
+   554        1:1        1:1         *1      0    
+   555        1:1        2:2      +   0     *1    
+   556        1:1        2:2      +   0     *1    
+   557        1:1        2:2      +   0     *1    
+   558        1:1        2:2      +   0     *1    
+   559        1:1        2:2      +   0     *1    
+   560        1:1        1:1         *1      0    
+   561        1:1        2:2      +   0     *1    
+   562        1:1        1:1         *1      0    
+   563        1:1        1:1         *1      0    
+   564        1:1        2:2      +   0     *1    
+   565        1:1        2:2      +   0     *1    
+   566        1:1        2:2      +   0     *1    
+   567        1:1        1:1         *1      0    
+   568        1:1        1:1         *1      0    
+   569        1:1        1:1         *1      0    
+   570        1:1        2:2      +   0     *1    
+   571        1:1        2:2      +   0     *1    
+   572        1:1        2:2      +   0     *1    
+   573        1:1        2:2      +   0     *1    
+   574        1:1        2:2      +   0     *1    
+   575        1:1        1:1         *1      0    
+   576        1:1        2:2      +   0     *1    
+   577        1:1        2:2      +   0     *1    
+   578        1:1        2:2      +   0     *1    
+   579        1:1        2:2      +   0     *1    
+   580        1:1        2:2      +   0     *1    
+   581        1:1        1:1         *1      0    
+   582        1:1        2:2      +   0     *1    
+   583        1:1        2:2      +   0     *1    
+   584        1:1        1:1         *1      0    
+   585        1:1        1:1         *1      0    
+   586        1:1        2:2      +   0     *1    
+   587        1:1        2:2      +   0     *1    
+   588        1:1        2:2      +   0     *1    
+   589        1:1        1:1         *1      0    
+   590        1:1        2:2      +   0     *1    
+   591        1:1        2:2      +   0     *1    
+   592        1:1        2:2      +   0     *1    
+   593        1:1        2:2      +   0     *1    
+   594        1:1        2:2      +   0     *1    
+   595        1:1        1:1         *1      0    
+   596        1:1        2:2      +   0     *1    
+   597        1:1        2:2      +   0     *1    
+   598        1:1        2:2      +   0     *1    
+   599        1:1        1:1         *1      0    
+   600        1:1        2:2      +   0     *1    
+   601        1:1        2:2      +   0     *1    
+   602        1:1        2:2      +   0     *1    
+   603        1:1        2:2      +   0     *1    
+   604        1:1        2:2      +   0     *1    
+   605        1:1        2:2      +   0     *1    
+   606        1:1        1:1         *1      0    
+   607        1:1        1:1         *1      0    
+   608        1:1        2:2      +   0     *1    
+   609        1:1        2:2      +   0     *1    
+   610        1:1        2:2      +   0     *1    
+   611        1:1        2:2      +   0     *1    
+   612        1:1        2:2      +   0     *1    
+   613        1:1        2:2      +   0     *1    
+   614        1:1        1:1         *1      0    
+   615        1:1        2:2      +   0     *1    
+   616        1:1        2:2      +   0     *1    
+   617        1:1        2:2      +   0     *1    
+   618        1:1        2:2      +   0     *1    
+   619        1:1        2:2      +   0     *1    
+   620        1:1        2:2      +   0     *1    
+   621        1:1        1:1         *1      0    
+   622        1:1        2:2      +   0     *1    
+   623        1:1        2:2      +   0     *1    
+   624        1:1        1:1         *1      0    
+   625        1:1        1:1         *1      0    
+   626        1:1        2:2      +   0     *1    
+   627        1:1        2:2      +   0     *1    
+   628        1:1        2:2      +   0     *1    
+   629        1:1        2:2      +   0     *1    
+   630        1:1        2:2      +   0     *1    
+   631        1:1        1:1         *1      0    
+   632        1:1        2:2      +   0     *1    
+   633        1:1        1:1         *1      0    
+   634        1:1        2:2      +   0     *1    
+   635        1:1        2:2      +   0     *1    
+   636        1:1        1:1         *1      0    
+   637        1:1        2:2      +   0     *1    
+   638        1:1        1:1         *1      0    
+   639        1:1        2:2      +   0     *1    
+   640        1:1        1:1         *1      0    
+   641        1:1        2:2      +   0     *1    
+   642        1:1        2:2      +   0     *1    
+   643        1:1        2:2      +   0     *1    
+   644        1:1        2:2      +   0     *1    
+   645        1:1        1:1         *1      0    
+   646        1:1        2:2      +   0     *1    
+   647        1:1        2:2      +   0     *1    
+   648        1:1        2:2      +   0     *1    
+   649        1:1        1:1         *1      0    
+   650        1:1        1:1         *1      0    
+   651        1:1        2:2      +   0     *1    
+   652        1:1        2:2      +   0     *1    
+   653        1:1        2:2      +   0     *1    
+   654        1:1        2:2      +   0     *1    
+   655        1:1        2:2      +   0     *1    
+   656        1:1        2:2      +   0     *1    
+   657        1:1        2:2      +   0     *1    
+   658        1:1        2:2      +   0     *1    
+   659        1:1        1:1         *1      0    
+   660        1:1        2:2      +   0     *1    
+   661        1:1        1:1         *1      0    
+   662        1:1        2:2      +   0     *1    
+   663        1:1        2:2      +   0     *1    
+   664        1:1        1:1         *1      0    
+   665        1:1        2:2      +   0     *1    
+   666        1:1        1:1         *1      0    
+   667        1:1        2:2      +   0     *1    
+   668        1:1        2:2      +   0     *1    
+   669        1:1        2:2      +   0     *1    
+   670        1:1        2:2      +   0     *1    
+   671        1:1        2:2      +   0     *1    
+   672        1:1        2:2      +   0     *1    
+   673        1:1        2:2      +   0     *1    
+   674        1:1        2:2      +   0     *1    
+   675        1:1        2:2      +   0     *1    
+   676        1:1        2:2      +   0     *1    
+   677        1:1        2:2      +   0     *1    
+   678        1:1        2:2      +   0     *1    
+   679        1:1        2:2      +   0     *1    
+   680        1:1        2:2      +   0     *1    
+   681        1:1        2:2      +   0     *1    
+   682        1:1        2:2      +   0     *1    
+   683        1:1        2:2      +   0     *1    
+   684        1:1        2:2      +   0     *1    
+   685        1:1        2:2      +   0     *1    
+   686        1:1        2:2      +   0     *1    
+   687        1:1        2:2      +   0     *1    
+   688        1:1        2:2      +   0     *1    
+   689        1:1        2:2      +   0     *1    
+   690        1:1        1:1         *1      0    
+   691        1:1        2:2      +   0     *1    
+   692        1:1        2:2      +   0     *1    
+   693        1:1        2:2      +   0     *1    
+   694        1:1        2:2      +   0     *1    
+   695        1:1        2:2      +   0     *1    
+   696        1:1        2:2      +   0     *1    
+   697        1:1        2:2      +   0     *1    
+   698        1:1        2:2      +   0     *1    
+   699        1:1        2:2      +   0     *1    
+   700        1:1        2:2      +   0     *1    
+   701        1:1        2:2      +   0     *1    
+   702        1:1        2:2      +   0     *1    
+   703        1:1        2:2      +   0     *1    
+   704        1:1        2:2      +   0     *1    
+   705        1:1        2:2      +   0     *1    
+   706        1:1        2:2      +   0     *1    
+   707        1:1        1:1         *1      0    
+   708        1:1        2:2      +   0     *1    
+   709        1:1        2:2      +   0     *1    
+   710        1:1        2:2      +   0     *1    
+   711        1:1        2:2      +   0     *1    
+   712        1:1        2:2      +   0     *1    
+   713        1:1        2:2      +   0     *1    
+   714        1:1        2:2      +   0     *1    
+   715        1:1        2:2      +   0     *1    
+   716        1:1        2:2      +   0     *1    
+   717        1:1        2:2      +   0     *1    
+   718        1:1        2:2      +   0     *1    
+   719        1:1        1:1         *1      0    
+   720        1:1        1:1         *1      0    
+   721        1:1        2:2      +   0     *1    
+   722        1:1        1:1         *1      0    
+   723        1:1        2:2      +   0     *1    
+   724        1:1        2:2      +   0     *1    
+   725        1:1        2:2      +   0     *1    
+   726        1:1        2:2      +   0     *1    
+   727        1:1        2:2      +   0     *1    
+   728        1:1        2:2      +   0     *1    
+   729        1:1        1:1         *1      0    
+   730        1:1        2:2      +   0     *1    
+   731        1:1        2:2      +   0     *1    
+   732        1:1        1:1         *1      0    
+   733        1:1        1:1         *1      0    
+   734        1:1        2:2      +   0     *1    
+   735        1:1        1:1         *1      0    
+   736        1:1        2:2      +   0     *1    
+   737        1:1        1:1         *1      0    
+   738        1:1        2:2      +   0     *1    
+   739        1:1        2:2      +   0     *1    
+   740        1:1        1:1         *1      0    
+   741        1:1        2:2      +   0     *1    
+   742        1:1        1:1         *1      0    
+   743        1:1        2:2      +   0     *1    
+   744        1:1        2:2      +   0     *1    
+   745        1:1        2:2      +   0     *1    
+   746        1:1        2:2      +   0     *1    
+   747        1:1        2:2      +   0     *1    
+   748        1:1        1:1         *1      0    
+   749        1:1        1:1         *1      0    
+   750        1:1        2:2      +   0     *1    
+   751        1:1        2:2      +   0     *1    
+   752        1:1        2:2      +   0     *1    
+   753        1:1        2:2      +   0     *1    
+   754        1:1        2:2      +   0     *1    
+   755        1:1        2:2      +   0     *1    
+   756        1:1        2:2      +   0     *1    
+   757        1:1        2:2      +   0     *1    
+   758        1:1        2:2      +   0     *1    
+   759        1:1        2:2      +   0     *1    
+   760        1:1        2:2      +   0     *1    
+   761        1:1        1:1         *1      0    
+   762        1:1        2:2      +   0     *1    
+   763        1:1        2:2      +   0     *1    
+   764        1:1        2:2      +   0     *1    
+   765        1:1        2:2      +   0     *1    
+   766        1:1        2:2      +   0     *1    
+   767        1:1        2:2      +   0     *1    
+   768        1:1        1:1         *1      0    
+   769        1:1        2:2      +   0     *1    
+   770        1:1        2:2      +   0     *1    
+   771        1:1        1:1         *1      0    
+   772        1:1        1:1         *1      0    
+   773        1:1        1:1         *1      0    
+   774        1:1        2:2      +   0     *1    
+   775        1:1        2:2      +   0     *1    
+   776        1:1        2:2      +   0     *1    
+   777        1:1        1:1         *1      0    
+   778        1:1        2:2      +   0     *1    
+   779        1:1        1:1         *1      0    
+   780        1:1        1:1         *1      0    
+   781        1:1        2:2      +   0     *1    
+   782        1:1        2:2      +   0     *1    
+   783        1:1        2:2      +   0     *1    
+   784        1:1        2:2      +   0     *1    
+   785        1:1        2:2      +   0     *1    
+   786        1:1        2:2      +   0     *1    
+   787        1:1        2:2      +   0     *1    
+   788        1:1        2:2      +   0     *1    
+   789        1:1        2:2      +   0     *1    
+   790        1:1        2:2      +   0     *1    
+   791        1:1        2:2      +   0     *1    
+   792        1:1        1:1         *1      0    
+   793        1:1        2:2      +   0     *1    
+   794        1:1        2:2      +   0     *1    
+   795        1:1        2:2      +   0     *1    
+   796        1:1        2:2      +   0     *1    
+   797        1:1        2:2      +   0     *1    
+   798        1:1        2:2      +   0     *1    
+   799        1:1        2:2      +   0     *1    
+   800        1:1        2:2      +   0     *1    
+   801        1:1        2:2      +   0     *1    
+   802        1:1        1:1         *1      0    
+   803        1:1        2:2      +   0     *1    
+   804        1:1        2:2      +   0     *1    
+   805        1:1        1:1         *1      0    
+   806        1:1        2:2      +   0     *1    
+   807        1:1        2:2      +   0     *1    
+   808        1:1        1:1         *1      0    
+   809        1:1        2:2      +   0     *1    
+   810        1:1        2:2      +   0     *1    
+   811        1:1        2:2      +   0     *1    
+   812        1:1        2:2      +   0     *1    
+   813        1:1        2:2      +   0     *1    
+   814        1:1        1:1         *1      0    
+   815        1:1        2:2      +   0     *1    
+   816        1:1        2:2      +   0     *1    
+   817        1:1        1:1         *1      0    
+   818        1:1        2:2      +   0     *1    
+   819        1:1        2:2      +   0     *1    
+   820        1:1        1:1         *1      0    
+   821        1:1        2:2      +   0     *1    
+   822        1:1        2:2      +   0     *1    
+   823        1:1        2:2      +   0     *1    
+   824        1:1        2:2      +   0     *1    
+   825        1:1        2:2      +   0     *1    
+   826        1:1        1:1         *1      0    
+   827        1:1        1:1         *1      0    
+   828        1:1        2:2      +   0     *1    
+   829        1:1        2:2      +   0     *1    
+   830        1:1        2:2      +   0     *1    
+   831        1:1        2:2      +   0     *1    
+   832        1:1        2:2      +   0     *1    
+   833        1:1        2:2      +   0     *1    
+   834        1:1        2:2      +   0     *1    
+   835        1:1        1:1         *1      0    
+   836        1:1        1:1         *1      0    
+   837        1:1        2:2      +   0     *1    
+   838        1:1        2:2      +   0     *1    
+   839        1:1        1:1         *1      0    
+   840        1:1        2:2      +   0     *1    
+   841        1:1        2:2      +   0     *1    
+   842        1:1        2:2      +   0     *1    
+   843        1:1        2:2      +   0     *1    
+   844        1:1        1:1         *1      0    
+   845        1:1        2:2      +   0     *1    
+   846        1:1        1:1         *1      0    
+   847        1:1        1:1         *1      0    
+   848        1:1        1:1         *1      0    
+   849        1:1        2:2      +   0     *1    
+   850        1:1        2:2      +   0     *1    
+   851        1:1        2:2      +   0     *1    
+   852        1:1        1:1         *1      0    
+   853        1:1        2:2      +   0     *1    
+   854        1:1        2:2      +   0     *1    
+   855        1:1        1:1         *1      0    
+   856        1:1        1:1         *1      0    
+   857        1:1        1:1         *1      0    
+   858        1:1        2:2      +   0     *1    
+   859        1:1        2:2      +   0     *1    
+   860        1:1        2:2      +   0     *1    
+   861        1:1        2:2      +   0     *1    
+   862        1:1        1:1         *1      0    
+   863        1:1        1:1         *1      0    
+   864        1:1        1:1         *1      0    
+   865        1:1        2:2      +   0     *1    
+   866        1:1        2:2      +   0     *1    
+   867        1:1        2:2      +   0     *1    
+   868        1:1        2:2      +   0     *1    
+   869        1:1        2:2      +   0     *1    
+   870        1:1        2:2      +   0     *1    
+   871        1:1        1:1         *1      0    
+   872        1:1        1:1         *1      0    
+   873        1:1        2:2      +   0     *1    
+   874        1:1        2:2      +   0     *1    
+   875        1:1        2:2      +   0     *1    
+   876        1:1        2:2      +   0     *1    
+   877        1:1        2:2      +   0     *1    
+   878        1:1        2:2      +   0     *1    
+   879        1:1        2:2      +   0     *1    
+   880        1:1        2:2      +   0     *1    
+   881        1:1        2:2      +   0     *1    
+   882        1:1        2:2      +   0     *1    
+   883        1:1        1:1         *1      0    
+   884        1:1        1:1         *1      0    
+   885        1:1        2:2      +   0     *1    
+   886        1:1        2:2      +   0     *1    
+   887        1:1        1:1         *1      0    
+   888        1:1        2:2      +   0     *1    
+   889        1:1        1:1         *1      0    
+   890        1:1        2:2      +   0     *1    
+   891        1:1        2:2      +   0     *1    
+   892        1:1        2:2      +   0     *1    
+   893        1:1        1:1         *1      0    
+   894        1:1        2:2      +   0     *1    
+   895        1:1        2:2      +   0     *1    
+   896        1:1        1:1         *1      0    
+   897        1:1        2:2      +   0     *1    
+   898        1:1        2:2      +   0     *1    
+   899        1:1        2:2      +   0     *1    
+   900        1:1        2:2      +   0     *1    
+   901        1:1        2:2      +   0     *1    
+   902        1:1        2:2      +   0     *1    
+   903        1:1        1:1         *1      0    
+   904        1:1        2:2      +   0     *1    
+   905        1:1        2:2      +   0     *1    
+   906        1:1        2:2      +   0     *1    
+   907        1:1        2:2      +   0     *1    
+   908        1:1        2:2      +   0     *1    
+   909        1:1        2:2      +   0     *1    
+   910        1:1        2:2      +   0     *1    
+   911        1:1        2:2      +   0     *1    
+   912        1:1        2:2      +   0     *1    
+   913        1:1        2:2      +   0     *1    
+   914        1:1        2:2      +   0     *1    
+   915        1:1        2:2      +   0     *1    
+   916        1:1        2:2      +   0     *1    
+   917        1:1        2:2      +   0     *1    
+   918        1:1        2:2      +   0     *1    
+   919        1:1        1:1         *1      0    
+   920        1:1        2:2      +   0     *1    
+   921        1:1        2:2      +   0     *1    
+   922        1:1        2:2      +   0     *1    
+   923        1:1        2:2      +   0     *1    
+   924        1:1        2:2      +   0     *1    
+   925        1:1        2:2      +   0     *1    
+   926        1:1        2:2      +   0     *1    
+   927        1:1        2:2      +   0     *1    
+   928        1:1        2:2      +   0     *1    
+   929        1:1        2:2      +   0     *1    
+   930        1:1        2:2      +   0     *1    
+   931        1:1        2:2      +   0     *1    
+   932        1:1        2:2      +   0     *1    
+   933        1:1        2:2      +   0     *1    
+   934        1:1        2:2      +   0     *1    
+   935        1:1        2:2      +   0     *1    
+   936        1:1        2:2      +   0     *1    
+   937        1:1        1:1         *1      0    
+   938        1:1        2:2      +   0     *1    
+   939        1:1        2:2      +   0     *1    
+   940        1:1        2:2      +   0     *1    
+   941        1:1        2:2      +   0     *1    
+   942        1:1        2:2      +   0     *1    
+   943        1:1        2:2      +   0     *1    
+   944        1:1        2:2      +   0     *1    
+   945        1:1        2:2      +   0     *1    
+   946        1:1        2:2      +   0     *1    
+   947        1:1        2:2      +   0     *1    
+   948        1:1        2:2      +   0     *1    
+   949        1:1        2:2      +   0     *1    
+   950        1:1        2:2      +   0     *1    
+   951        1:1        2:2      +   0     *1    
+   952        1:1        2:2      +   0     *1    
+   953        1:1        2:2      +   0     *1    
+   954        1:1        1:1         *1      0    
+   955        1:1        1:1         *1      0    
+   956        1:1        2:2      +   0     *1    
+   957        1:1        2:2      +   0     *1    
+   958        1:1        2:2      +   0     *1    
+   959        1:1        2:2      +   0     *1    
+   960        1:1        2:2      +   0     *1    
+   961        1:1        1:1         *1      0    
+   962        1:1        2:2      +   0     *1    
+   963        1:1        2:2      +   0     *1    
+   964        1:1        2:2      +   0     *1    
+   965        1:1        1:1         *1      0    
+   966        1:1        2:2      +   0     *1    
+   967        1:1        2:2      +   0     *1    
+   968        1:1        2:2      +   0     *1    
+   969        1:1        1:1         *1      0    
+   970        1:1        2:2      +   0     *1    
+   971        1:1        2:2      +   0     *1    
+   972        1:1        2:2      +   0     *1    
+   973        1:1        2:2      +   0     *1    
+   974        1:1        2:2      +   0     *1    
+   975        1:1        2:2      +   0     *1    
+   976        1:1        2:2      +   0     *1    
+   977        1:1        1:1         *1      0    
+   978        1:1        1:1         *1      0    
+   979        1:1        2:2      +   0     *1    
+   980        1:1        1:1         *1      0    
+   981        1:1        2:2      +   0     *1    
+   982        1:1        2:2      +   0     *1    
+   983        1:1        2:2      +   0     *1    
+   984        1:1        2:2      +   0     *1    
+   985        1:1        2:2      +   0     *1    
+   986        1:1        2:2      +   0     *1    
+   987        1:1        2:2      +   0     *1    
+   988        1:1        2:2      +   0     *1    
+   989        1:1        2:2      +   0     *1    
+   990        1:1        2:2      +   0     *1    
+   991        1:1        2:2      +   0     *1    
+   992        1:1        2:2      +   0     *1    
+   993        1:1        2:2      +   0     *1    
+   994        1:1        1:1         *1      0    
+   995        1:1        1:1         *1      0    
+   996        1:1        2:2      +   0     *1    
+   997        1:1        2:2      +   0     *1    
+   998        1:1        2:2      +   0     *1    
+   999        1:1        2:2      +   0     *1    
+  1000        1:1        2:2      +   0     *1    
+  1001        1:1        1:1         *1      0    
+  1002        1:1        2:2      +   0     *1    
+  1003        1:1        1:1         *1      0    
+  1004        1:1        2:2      +   0     *1    
+  1005        1:1        1:1         *1      0    
+  1006        1:1        2:2      +   0     *1    
+  1007        1:1        1:1         *1      0    
+  1008        1:1        2:2      +   0     *1    
+  1009        1:1        2:2      +   0     *1    
+  1010        1:1        2:2      +   0     *1    
+  1011        1:1        1:1         *1      0    
+  1012        1:1        2:2      +   0     *1    
+  1013        1:1        2:2      +   0     *1    
+  1014        1:1        2:2      +   0     *1    
+  1015        1:1        2:2      +   0     *1    
+  1016        1:1        2:2      +   0     *1    
+  1017        1:1        1:1         *1      0    
+  1018        1:1        2:2      +   0     *1    
+  1019        1:1        2:2      +   0     *1    
+  1020        1:1        2:2      +   0     *1    
+  1021        1:1        2:2      +   0     *1    
+  1022        1:1        1:1         *1      0    
+  1023        1:1        2:2      +   0     *1    
+  1024        1:1        2:2      +   0     *1    
+  1025        1:1        1:1         *1      0    
+  1026        1:1        2:2      +   0     *1    
+  1027        1:1        2:2      +   0     *1    
+  1028        1:1        2:2      +   0     *1    
+  1029        1:1        1:1         *1      0    
+  1030        1:1        2:2      +   0     *1    
+  1031        1:1        1:1         *1      0    
+  1032        1:1        2:2      +   0     *1    
+  1033        1:1        2:2      +   0     *1    
+  1034        1:1        2:2      +   0     *1    
+  1035        1:1        2:2      +   0     *1    
+  1036        1:1        1:1         *1      0    
+  1037        1:1        1:1         *1      0    
+  1038        1:1        2:2      +   0     *1    
+  1039        1:1        2:2      +   0     *1    
+  1040        1:1        2:2      +   0     *1    
+  1041        1:1        2:2      +   0     *1    
+  1042        1:1        2:2      +   0     *1    
+  1043        1:1        2:2      +   0     *1    
+  1044        1:1        2:2      +   0     *1    
+  1045        1:1        2:2      +   0     *1    
+  1046        1:1        2:2      +   0     *1    
+  1047        1:1        1:1         *1      0    
+  1048        1:1        2:2      +   0     *1    
+  1049        1:1        2:2      +   0     *1    
+  1050        1:1        2:2      +   0     *1    
+  1051        1:1        2:2      +   0     *1    
+  1052        1:1        1:1         *1      0    
+  1053        1:1        1:1         *1      0    
+  1054        1:1        1:1         *1      0    
+  1055        1:1        2:2      +   0     *1    
+  1056        1:1        2:2      +   0     *1    
+  1057        1:1        2:2      +   0     *1    
+  1058        1:1        2:2      +   0     *1    
+  1059        1:1        2:2      +   0     *1    
+  1060        1:1        2:2      +   0     *1    
+  1061        1:1        1:1         *1      0    
+  1062        1:1        1:1         *1      0    
+  1063        1:1        2:2      +   0     *1    
+  1064        1:1        2:2      +   0     *1    
+  1065        1:1        1:1         *1      0    
+  1066        1:1        2:2      +   0     *1    
+  1067        1:1        2:2      +   0     *1    
+  1068        1:1        2:2      +   0     *1    
+  1069        1:1        2:2      +   0     *1    
+  1070        1:1        1:1         *1      0    
+  1071        1:1        2:2      +   0     *1    
+  1072        1:1        2:2      +   0     *1    
+  1073        1:1        2:2      +   0     *1    
+  1074        1:1        1:1         *1      0    
+  1075        1:1        2:2      +   0     *1    
+  1076        1:1        1:1         *1      0    
+  1077        1:1        2:2      +   0     *1    
+  1078        1:1        2:2      +   0     *1    
+  1079        1:1        2:2      +   0     *1    
+  1080        1:1        2:2      +   0     *1    
+  1081        1:1        2:2      +   0     *1    
+  1082        1:1        2:2      +   0     *1    
+  1083        1:1        2:2      +   0     *1    
+  1084        1:1        1:1         *1      0    
+  1085        1:1        2:2      +   0     *1    
+  1086        1:1        2:2      +   0     *1    
+  1087        1:1        2:2      +   0     *1    
+  1088        1:1        2:2      +   0     *1    
+  1089        1:1        1:1         *1      0    
+  1090        1:1        2:2      +   0     *1    
+  1091        1:1        2:2      +   0     *1    
+  1092        1:1        2:2      +   0     *1    
+  1093        1:1        2:2      +   0     *1    
+  1094        1:1        1:1         *1      0    
+  1095        1:1        2:2      +   0     *1    
+  1096        1:1        2:2      +   0     *1    
+  1097        1:1        1:1         *1      0    
+  1098        1:1        2:2      +   0     *1    
+  1099        1:1        1:1         *1      0    
+  1100        1:1        2:2      +   0     *1    
+  1101        1:1        2:2      +   0     *1    
+  1102        1:1        1:1         *1      0    
+  1103        1:1        2:2      +   0     *1    
+  1104        1:1        1:1         *1      0    
+  1105        1:1        2:2      +   0     *1    
+  1106        1:1        2:2      +   0     *1    
+  1107        1:1        1:1         *1      0    
+  1108        1:1        2:2      +   0     *1    
+  1109        1:1        1:1         *1      0    
+  1110        1:1        1:1         *1      0    
+  1111        1:1        1:1         *1      0    
+  1112        1:1        2:2      +   0     *1    
+  1113        1:1        2:2      +   0     *1    
+  1114        1:1        2:2      +   0     *1    
+  1115        1:1        1:1         *1      0    
+  1116        1:1        2:2      +   0     *1    
+  1117        1:1        2:2      +   0     *1    
+  1118        1:1        2:2      +   0     *1    
+  1119        1:1        2:2      +   0     *1    
+  1120        1:1        2:2      +   0     *1    
+  1121        1:1        2:2      +   0     *1    
+  1122        1:1        2:2      +   0     *1    
+  1123        1:1        2:2      +   0     *1    
+  1124        1:1        2:2      +   0     *1    
+  1125        1:1        2:2      +   0     *1    
+  1126        1:1        2:2      +   0     *1    
+  1127        1:1        2:2      +   0     *1    
+  1128        1:1        2:2      +   0     *1    
+  1129        1:1        2:2      +   0     *1    
+  1130        1:1        2:2      +   0     *1    
+  1131        1:1        1:1         *1      0    
+  1132        1:1        2:2      +   0     *1    
+  1133        1:1        1:1         *1      0    
+  1134        1:1        1:1         *1      0    
+  1135        1:1        2:2      +   0     *1    
+  1136        1:1        1:1         *1      0    
+  1137        1:1        2:2      +   0     *1    
+  1138        1:1        2:2      +   0     *1    
+  1139        1:1        2:2      +   0     *1    
+  1140        1:1        2:2      +   0     *1    
+  1141        1:1        2:2      +   0     *1    
+  1142        1:1        1:1         *1      0    
+  1143        1:1        2:2      +   0     *1    
+  1144        1:1        1:1         *1      0    
+  1145        1:1        2:2      +   0     *1    
+  1146        1:1        2:2      +   0     *1    
+  1147        1:1        2:2      +   0     *1    
+  1148        1:1        1:1         *1      0    
+  1149        1:1        2:2      +   0     *1    
+  1150        1:1        2:2      +   0     *1    
+  1151        1:1        2:2      +   0     *1    
+  1152        1:1        2:2      +   0     *1    
+  1153        1:1        2:2      +   0     *1    
+  1154        1:1        2:2      +   0     *1    
+  1155        1:1        2:2      +   0     *1    
+  1156        1:1        2:2      +   0     *1    
+  1157        1:1        1:1         *1      0    
+  1158        1:1        2:2      +   0     *1    
+  1159        1:1        2:2      +   0     *1    
+  1160        1:1        1:1         *1      0    
+  1161        1:1        2:2      +   0     *1    
+  1162        1:1        2:2      +   0     *1    
+  1163        1:1        1:1         *1      0    
+  1164        1:1        2:2      +   0     *1    
+  1165        1:1        2:2      +   0     *1    
+  1166        1:1        2:2      +   0     *1    
+  1167        1:1        2:2      +   0     *1    
+  1168        1:1        1:1         *1      0    
+  1169        1:1        2:2      +   0     *1    
+  1170        1:1        1:1         *1      0    
+  1171        1:1        2:2      +   0     *1    
+  1172        1:1        2:2      +   0     *1    
+  1173        1:1        1:1         *1      0    
+  1174        1:1        2:2      +   0     *1    
+  1175        1:1        1:1         *1      0    
+  1176        1:1        2:2      +   0     *1    
+  1177        1:1        2:2      +   0     *1    
+  1178        1:1        2:2      +   0     *1    
+  1179        1:1        2:2      +   0     *1    
+  1180        1:1        1:1         *1      0    
+  1181        1:1        2:2      +   0     *1    
+  1182        1:1        2:2      +   0     *1    
+  1183        1:1        2:2      +   0     *1    
+  1184        1:1        2:2      +   0     *1    
+  1185        1:1        2:2      +   0     *1    
+  1186        1:1        1:1         *1      0    
+  1187        1:1        2:2      +   0     *1    
+  1188        1:1        1:1         *1      0    
+  1189        1:1        2:2      +   0     *1    
+  1190        1:1        2:2      +   0     *1    
+  1191        1:1        2:2      +   0     *1    
+  1192        1:1        1:1         *1      0    
+  1193        1:1        1:1         *1      0    
+  1194        1:1        2:2      +   0     *1    
+  1195        1:1        2:2      +   0     *1    
+  1196        1:1        2:2      +   0     *1    
+  1197        1:1        2:2      +   0     *1    
+  1198        1:1        2:2      +   0     *1    
+  1199        1:1        1:1         *1      0    
+  1200        1:1        2:2      +   0     *1    
+  1201        1:1        1:1         *1      0    
+  1202        1:1        2:2      +   0     *1    
+  1203        1:1        2:2      +   0     *1    
+  1204        1:1        2:2      +   0     *1    
+  1205        1:1        1:1         *1      0    
+  1206        1:1        1:1         *1      0    
+  1207        1:1        1:1         *1      0    
+  1208        1:1        2:2      +   0     *1    
+  1209        1:1        2:2      +   0     *1    
+  1210        1:1        2:2      +   0     *1    
+  1211        1:1        2:2      +   0     *1    
+  1212        1:1        2:2      +   0     *1    
+  1213        1:1        1:1         *1      0    
+  1214        1:1        1:1         *1      0    
+  1215        1:1        2:2      +   0     *1    
+  1216        1:1        2:2      +   0     *1    
+  1217        1:1        2:2      +   0     *1    
+  1218        1:1        1:1         *1      0    
+  1219        1:1        2:2      +   0     *1    
+  1220        1:1        2:2      +   0     *1    
+  1221        1:1        1:1         *1      0    
+  1222        1:1        2:2      +   0     *1    
+  1223        1:1        2:2      +   0     *1    
+  1224        1:1        2:2      +   0     *1    
+  1225        1:1        2:2      +   0     *1    
+  1226        1:1        2:2      +   0     *1    
+  1227        1:1        2:2      +   0     *1    
+  1228        1:1        2:2      +   0     *1    
+  1229        1:1        2:2      +   0     *1    
+  1230        1:1        1:1         *1      0    
+  1231        1:1        2:2      +   0     *1    
+  1232        1:1        2:2      +   0     *1    
+  1233        1:1        1:1         *1      0    
+  1234        1:1        1:1         *1      0    
+  1235        1:1        2:2      +   0     *1    
+  1236        1:1        2:2      +   0     *1    
+  1237        1:1        2:2      +   0     *1    
+  1238        1:1        2:2      +   0     *1    
+  1239        1:1        2:2      +   0     *1    
+  1240        1:1        2:2      +   0     *1    
+  1241        1:1        2:2      +   0     *1    
+  1242        1:1        2:2      +   0     *1    
+  1243        1:1        2:2      +   0     *1    
+  1244        1:1        2:2      +   0     *1    
+  1245        1:1        1:1         *1      0    
+  1246        1:1        2:2      +   0     *1    
+  1247        1:1        1:1         *1      0    
+  1248        1:1        2:2      +   0     *1    
+  1249        1:1        2:2      +   0     *1    
+  1250        1:1        2:2      +   0     *1    
+  1251        1:1        2:2      +   0     *1    
+  1252        1:1        1:1         *1      0    
+  1253        1:1        2:2      +   0     *1    
+  1254        1:1        2:2      +   0     *1    
+  1255        1:1        2:2      +   0     *1    
+  1256        1:1        2:2      +   0     *1    
+  1257        1:1        1:1         *1      0    
+  1258        1:1        2:2      +   0     *1    
+  1259        1:1        2:2      +   0     *1    
+  1260        1:1        2:2      +   0     *1    
+  1261        1:1        2:2      +   0     *1    
+  1262        1:1        2:2      +   0     *1    
+  1263        1:1        2:2      +   0     *1    
+  1264        1:1        1:1         *1      0    
+  1265        1:1        2:2      +   0     *1    
+  1266        1:1        2:2      +   0     *1    
+  1267        1:1        1:1         *1      0    
+  1268        1:1        2:2      +   0     *1    
+  1269        1:1        2:2      +   0     *1    
+  1270        1:1        2:2      +   0     *1    
+  1271        1:1        2:2      +   0     *1    
+  1272        1:1        2:2      +   0     *1    
+  1273        1:1        1:1         *1      0    
+  1274        1:1        1:1         *1      0    
+  1275        1:1        2:2      +   0     *1    
+  1276        1:1        1:1         *1      0    
+  1277        1:1        2:2      +   0     *1    
+  1278        1:1        1:1         *1      0    
+  1279        1:1        2:2      +   0     *1    
+  1280        1:1        1:1         *1      0    
+  1281        1:1        2:2      +   0     *1    
+  1282        1:1        1:1         *1      0    
+  1283        1:1        2:2      +   0     *1    
+  1284        1:1        2:2      +   0     *1    
+  1285        1:1        2:2      +   0     *1    
+  1286        1:1        2:2      +   0     *1    
+  1287        1:1        2:2      +   0     *1    
+  1288        1:1        2:2      +   0     *1    
+  1289        1:1        2:2      +   0     *1    
+  1290        1:1        2:2      +   0     *1    
+  1291        1:1        2:2      +   0     *1    
+  1292        1:1        2:2      +   0     *1    
+  1293        1:1        2:2      +   0     *1    
+  1294        1:1        1:1         *1      0    
+  1295        1:1        2:2      +   0     *1    
+  1296        1:1        2:2      +   0     *1    
+  1297        1:1        2:2      +   0     *1    
+  1298        1:1        2:2      +   0     *1    
+  1299        1:1        2:2      +   0     *1    
+  1300        1:1        1:1         *1      0    
+  1301        1:1        2:2      +   0     *1    
+  1302        1:1        2:2      +   0     *1    
+  1303        1:1        1:1         *1      0    
+  1304        1:1        2:2      +   0     *1    
+  1305        1:1        2:2      +   0     *1    
+  1306        1:1        2:2      +   0     *1    
+  1307        1:1        2:2      +   0     *1    
+  1308        1:1        1:1         *1      0    
+  1309        1:1        2:2      +   0     *1    
+  1310        1:1        2:2      +   0     *1    
+  1311        1:1        2:2      +   0     *1    
+  1312        1:1        2:2      +   0     *1    
+  1313        1:1        2:2      +   0     *1    
+  1314        1:1        2:2      +   0     *1    
+  1315        1:1        2:2      +   0     *1    
+  1316        1:1        2:2      +   0     *1    
+  1317        1:1        2:2      +   0     *1    
+  1318        1:1        2:2      +   0     *1    
+  1319        1:1        2:2      +   0     *1    
+  1320        1:1        1:1         *1      0    
+  1321        1:1        2:2      +   0     *1    
+  1322        1:1        2:2      +   0     *1    
+  1323        1:1        2:2      +   0     *1    
+  1324        1:1        1:1         *1      0    
+  1325        1:1        2:2      +   0     *1    
+  1326        1:1        2:2      +   0     *1    
+  1327        1:1        2:2      +   0     *1    
+  1328        1:1        2:2      +   0     *1    
+  1329        1:1        2:2      +   0     *1    
+  1330        1:1        1:1         *1      0    
+  1331        1:1        2:2      +   0     *1    
+  1332        1:1        2:2      +   0     *1    
+  1333        1:1        2:2      +   0     *1    
+  1334        1:1        2:2      +   0     *1    
+  1335        1:1        2:2      +   0     *1    
+  1336        1:1        2:2      +   0     *1    
+  1337        1:1        2:2      +   0     *1    
+  1338        1:1        2:2      +   0     *1    
+  1339        1:1        2:2      +   0     *1    
+  1340        1:1        2:2      +   0     *1    
+  1341        1:1        2:2      +   0     *1    
+  1342        1:1        2:2      +   0     *1    
+  1343        1:1        2:2      +   0     *1    
+  1344        1:1        2:2      +   0     *1    
+  1345        1:1        2:2      +   0     *1    
+  1346        1:1        1:1         *1      0    
+  1347        1:1        2:2      +   0     *1    
+  1348        1:1        2:2      +   0     *1    
+  1349        1:1        1:1         *1      0    
+  1350        1:1        2:2      +   0     *1    
+  1351        1:1        2:2      +   0     *1    
+  1352        1:1        2:2      +   0     *1    
+  1353        1:1        2:2      +   0     *1    
+  1354        1:1        2:2      +   0     *1    
+  1355        1:1        1:1         *1      0    
+  1356        1:1        1:1         *1      0    
+  1357        1:1        2:2      +   0     *1    
+  1358        1:1        2:2      +   0     *1    
+  1359        1:1        2:2      +   0     *1    
+  1360        1:1        2:2      +   0     *1    
+  1361        1:1        1:1         *1      0    
+  1362        1:1        2:2      +   0     *1    
+  1363        1:1        1:1         *1      0    
+  1364        1:1        2:2      +   0     *1    
+  1365        1:1        1:1         *1      0    
+  1366        1:1        2:2      +   0     *1    
+  1367        1:1        2:2      +   0     *1    
+  1368        1:1        1:1         *1      0    
+  1369        1:1        1:1         *1      0    
+  1370        1:1        1:1         *1      0    
+  1371        1:1        1:1         *1      0    
+  1372        1:1        2:2      +   0     *1    
+  1373        1:1        2:2      +   0     *1    
+  1374        1:1        2:2      +   0     *1    
+  1375        1:1        2:2      +   0     *1    
+  1376        1:1        2:2      +   0     *1    
+  1377        1:1        2:2      +   0     *1    
+  1378        1:1        2:2      +   0     *1    
+  1379        1:1        2:2      +   0     *1    
+  1380        1:1        2:2      +   0     *1    
+  1381        1:1        2:2      +   0     *1    
+  1382        1:1        1:1         *1      0    
+  1383        1:1        2:2      +   0     *1    
+  1384        1:1        2:2      +   0     *1    
+  1385        1:1        1:1         *1      0    
+  1386        1:1        2:2      +   0     *1    
+  1387        1:1        2:2      +   0     *1    
+  1388        1:1        2:2      +   0     *1    
+  1389        1:1        2:2      +   0     *1    
+  1390        1:1        2:2      +   0     *1    
+  1391        1:1        2:2      +   0     *1    
+  1392        1:1        2:2      +   0     *1    
+  1393        1:1        2:2      +   0     *1    
+  1394        1:1        2:2      +   0     *1    
+  1395        1:1        2:2      +   0     *1    
+  1396        1:1        2:2      +   0     *1    
+  1397        1:1        1:1         *1      0    
+  1398        1:1        2:2      +   0     *1    
+  1399        1:1        2:2      +   0     *1    
+  1400        1:1        2:2      +   0     *1    
+  1401        1:1        1:1         *1      0    
+  1402        1:1        2:2      +   0     *1    
+  1403        1:1        2:2      +   0     *1    
+  1404        1:1        2:2      +   0     *1    
+  1405        1:1        2:2      +   0     *1    
+  1406        1:1        2:2      +   0     *1    
+  1407        1:1        2:2      +   0     *1    
+  1408        1:1        1:1         *1      0    
+  1409        1:1        2:2      +   0     *1    
+  1410        1:1        1:1         *1      0    
+  1411        1:1        2:2      +   0     *1    
+  1412        1:1        1:1         *1      0    
+  1413        1:1        2:2      +   0     *1    
+  1414        1:1        1:1         *1      0    
+  1415        1:1        2:2      +   0     *1    
+  1416        1:1        2:2      +   0     *1    
+  1417        1:1        2:2      +   0     *1    
+  1418        1:1        1:1         *1      0    
+  1419        1:1        1:1         *1      0    
+  1420        1:1        2:2      +   0     *1    
+  1421        1:1        2:2      +   0     *1    
+  1422        1:1        2:2      +   0     *1    
+  1423        1:1        2:2      +   0     *1    
+  1424        1:1        2:2      +   0     *1    
+  1425        1:1        2:2      +   0     *1    
+  1426        1:1        2:2      +   0     *1    
+  1427        1:1        2:2      +   0     *1    
+  1428        1:1        2:2      +   0     *1    
+  1429        1:1        1:1         *1      0    
+  1430        1:1        2:2      +   0     *1    
+  1431        1:1        2:2      +   0     *1    
+  1432        1:1        1:1         *1      0    
+  1433        1:1        2:2      +   0     *1    
+  1434        1:1        2:2      +   0     *1    
+  1435        1:1        2:2      +   0     *1    
+  1436        1:1        2:2      +   0     *1    
+  1437        1:1        2:2      +   0     *1    
+  1438        1:1        1:1         *1      0    
+  1439        1:1        2:2      +   0     *1    
+  1440        1:1        2:2      +   0     *1    
+  1441        1:1        2:2      +   0     *1    
+  1442        1:1        1:1         *1      0    
+  1443        1:1        2:2      +   0     *1    
+  1444        1:1        2:2      +   0     *1    
+  1445        1:1        2:2      +   0     *1    
+  1446        1:1        2:2      +   0     *1    
+  1447        1:1        2:2      +   0     *1    
+  1448        1:1        2:2      +   0     *1    
+  1449        1:1        1:1         *1      0    
+  1450        1:1        2:2      +   0     *1    
+  1451        1:1        2:2      +   0     *1    
+  1452        1:1        1:1         *1      0    
+  1453        1:1        1:1         *1      0    
+  1454        1:1        1:1         *1      0    
+  1455        1:1        2:2      +   0     *1    
+  1456        1:1        2:2      +   0     *1    
+  1457        1:1        1:1         *1      0    
+  1458        1:1        2:2      +   0     *1    
+  1459        1:1        2:2      +   0     *1    
+  1460        1:1        2:2      +   0     *1    
+  1461        1:1        2:2      +   0     *1    
+  1462        1:1        2:2      +   0     *1    
+  1463        1:1        1:1         *1      0    
+  1464        1:1        2:2      +   0     *1    
+  1465        1:1        2:2      +   0     *1    
+  1466        1:1        2:2      +   0     *1    
+  1467        1:1        2:2      +   0     *1    
+  1468        1:1        2:2      +   0     *1    
+  1469        1:1        2:2      +   0     *1    
+  1470        1:1        1:1         *1      0    
+  1471        1:1        2:2      +   0     *1    
+  1472        1:1        2:2      +   0     *1    
+  1473        1:1        2:2      +   0     *1    
+  1474        1:1        2:2      +   0     *1    
+  1475        1:1        2:2      +   0     *1    
+  1476        1:1        2:2      +   0     *1    
+  1477        1:1        1:1         *1      0    
+  1478        1:1        2:2      +   0     *1    
+  1479        1:1        2:2      +   0     *1    
+  1480        1:1        2:2      +   0     *1    
+  1481        1:1        2:2      +   0     *1    
+  1482        1:1        2:2      +   0     *1    
+  1483        1:1        1:1         *1      0    
+  1484        1:1        1:1         *1      0    
+  1485        1:1        2:2      +   0     *1    
+  1486        1:1        2:2      +   0     *1    
+  1487        1:1        1:1         *1      0    
+  1488        1:1        1:1         *1      0    
+  1489        1:1        2:2      +   0     *1    
+  1490        1:1        2:2      +   0     *1    
+  1491        1:1        2:2      +   0     *1    
+  1492        1:1        2:2      +   0     *1    
+  1493        1:1        2:2      +   0     *1    
+  1494        1:1        2:2      +   0     *1    
+  1495        1:1        2:2      +   0     *1    
+  1496        1:1        1:1         *1      0    
+  1497        1:1        2:2      +   0     *1    
+  1498        1:1        1:1         *1      0    
+  1499        1:1        2:2      +   0     *1    
+  1500        1:1        2:2      +   0     *1    
+
+=== Evaluation on test set ===
+=== Summary ===
+
+Correctly Classified Instances         355               23.6667 %
+Incorrectly Classified Instances      1145               76.3333 %
+Kappa statistic                          0     
+Mean absolute error                      0.7633
+Root mean squared error                  0.8737
+Relative absolute error                114.5136 %
+Root relative squared error            131.069  %
+Total Number of Instances             1500     
+
+=== Detailed Accuracy By Class ===
+
+               TP Rate   FP Rate   Precision   Recall  F-Measure   ROC Area  Class
+                 0.237     0          1         0.237     0.383      ?        1
+                 0         0.763      0         0         0          ?        2
+Weighted Avg.    0.237     0          1         0.237     0.383      0    
+
+=== Confusion Matrix ===
+
+    a    b   <-- classified as
+  355 1145 |    a = 1
+    0    0 |    b = 2
+

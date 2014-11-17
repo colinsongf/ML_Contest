@@ -1,0 +1,277 @@
+%
+% This is the LaTeX template file for lecture notes for CS267,
+% Applications of Parallel Computing.  When preparing 
+% LaTeX notes for this class, please use this template.
+%
+% To familiarize yourself with this template, the body contains
+% some examples of its use.  Look them over.  Then you can
+% run LaTeX on this file.  After you have LaTeXed this file then
+% you can look over the result either by printing it out with
+% dvips or using xdvi.
+%
+
+\documentclass[twoside]{article}
+\setlength{\oddsidemargin}{0.25 in}
+\setlength{\evensidemargin}{-0.25 in}
+\setlength{\topmargin}{-0.6 in}
+\setlength{\textwidth}{6.5 in}
+\setlength{\textheight}{8.5 in}
+\setlength{\headsep}{0.75 in}
+\setlength{\parindent}{0 in}
+\setlength{\parskip}{0.1 in}
+
+%
+% ADD PACKAGES here:
+%
+
+\usepackage{amsmath,amsfonts,graphicx}
+
+%
+% The following commands set up the lecnum (lecture number)
+% counter and make various numbering schemes work relative
+% to the lecture number.
+%
+\newcounter{lecnum}
+\renewcommand{\thepage}{\arabic{page}}
+\renewcommand{\thesection}{\arabic{section}}
+\renewcommand{\theequation}{\arabic{equation}}
+\renewcommand{\thefigure}{\arabic{figure}}
+\renewcommand{\thetable}{\arabic{table}}
+
+%
+% The following macro is used to generate the header.
+%
+\newcommand{\lecture}[4]{
+   \pagestyle{myheadings}
+   \thispagestyle{plain}
+   \newpage
+   \setcounter{lecnum}{#1}
+   \setcounter{page}{1}
+   \noindent
+   \begin{center}
+   \framebox{
+      \vbox{\vspace{2mm}
+    \hbox to 6.28in { {\bf CS5011: Introduction to Machine Learning
+		\hfill Fall 2014} }
+       \vspace{4mm}
+       \hbox to 6.28in { {\Large \hfill Lecture #1: #2  \hfill} }
+       \vspace{2mm}
+       \hbox to 6.28in { {\it Lecturer: Prof. B. Ravindran \hfill Scribes: J.P. Sagar (CS12B039)} }
+      \vspace{2mm}}
+   }
+   \end{center}
+   \markboth{Lecture #1: #2}{Lecture #1: #2}
+
+   {\bf Disclaimer}: {\it These notes have not been subjected to the
+   usual scrutiny reserved for formal publications.  They may be distributed
+   outside this class only with the permission of the Instructor.}
+   \vspace*{4mm}
+}
+%
+% Convention for citations is authors' initials followed by the year.
+% For example, to cite a paper by Leighton and Maggs you would type
+% \cite{LM89}, and to cite a paper by Strassen you would type \cite{S69}.
+% (To avoid bibliography problems, for now we redefine the \cite command.)
+% Also commands that create a suitable format for the reference list.
+\renewcommand{\cite}[1]{[#1]}
+\def\beginrefs{\begin{list}%
+        {[\arabic{equation}]}{\usecounter{equation}
+         \setlength{\leftmargin}{2.0truecm}\setlength{\labelsep}{0.4truecm}%
+         \setlength{\labelwidth}{1.6truecm}}}
+\def\endrefs{\end{list}}
+\def\bibentry#1{\item[\hbox{[#1]}]}
+
+%Use this command for a figure; it puts a figure in wherever you want it.
+%usage: \fig{NUMBER}{SPACE-IN-INCHES}{CAPTION}
+\newcommand{\fig}[3]{
+			\vspace{#2}
+			\begin{center}
+			Figure #1:~#3
+			\end{center}
+	}
+% Use these for theorems, lemmas, proofs, etc.
+\newtheorem{theorem}{Theorem}
+\newtheorem{lemma}[theorem]{Lemma}
+\newtheorem{proposition}[theorem]{Proposition}
+\newtheorem{claim}[theorem]{Claim}
+\newtheorem{corollary}[theorem]{Corollary}
+\newtheorem{definition}[theorem]{Definition}
+\newenvironment{proof}{{\bf Proof:}}{\hfill\rule{2mm}{2mm}}
+
+% **** IF YOU WANT TO DEFINE ADDITIONAL MACROS FOR YOURSELF, PUT THEM HERE:
+
+\newcommand\E{\mathbb{E}}
+
+\begin{document}
+%FILL IN THE RIGHT INFO.
+%\lecture{**LECTURE-NUMBER**}{**DATE**}{**LECTURER**}{**SCRIBE**}
+\lecture{16}{Ensemble Methods}{Lecturer Name}{scribe-name}
+%\footnotetext{These notes are partially based on those of Nigel Mansell.}
+
+% **** YOUR NOTES GO HERE:
+
+% Some general latex examples and examples making use of the
+% macros follow.  
+%**** IN GENERAL, BE BRIEF. LONG SCRIBE NOTES, NO MATTER HOW WELL WRITTEN,
+%**** ARE NEVER READ BY ANYBODY.
+
+In this lecture notes we look at the following topics:
+\begin{itemize}
+\item Bagging
+\item Boosting
+\item Stacking
+\end{itemize}
+\section{Bagging} % Don't be this informal in your notes!
+
+Bagging is bootstrap aggregation. It is essentially that if we have a data set say 'D' and we sample it with replacement to get 'M' data sets say $D_{1},D_{2},....,D_{M}$ each of size 'N' same as that of 'D'. These $D_{1},D_{2},....,D_{M}$ are also called as bags. Now train a classifier on each of these data sets and let them be $G_{1},G_{2},....,G_{M}$. Final classifier is the aggregation of all these classifiers 'G' thereby reducing the variance. The bagging estimate is defined by \\
+\begin{center}
+
+			$G(x) = \frac{1}{M} \sum\limits_{i=1}^M G_{i}(x)$
+
+\end{center}
+
+K-NN is unstable. Decision trees are highly unstable if 'N' the number of points in the dataset is very small. Stability is how an algorithm is perturbed by small changes to its inputs.\\
+Support Vector Machines are stable unless the support vectors are changed. As the random perturbation has less probability for changing the SV's they are taken to be stable. In bagging we do random perturbations.\\
+Generally SVM's are very powerful classifiers. Bagged decision trees are simple and are better than SVM's at some point.
+
+\subsubsection*{Bag Tree(Bag Stump):-}
+Stump is prematurely stopped tree. Tree grows big and then gets pruned. We take a random attribute and split and in this way we form a stump. For different bags we get different stumps which we aggregate. This is called as a random forest.
+
+
+\section{Boosting}
+
+In boosting we take a series of weak classifiers and improve their performance. A weak classifier is one whose error rate is only slightly better than random guessing. It is a series not a collection. We generate data sets in a sequence or series or a specific fashion where we keep reducing the error.
+Let the output be from {+1,-1}.
+\begin{center}
+$G(x) = sign[\sum\limits_{m=1}^M \alpha_{m}G_{m}(x)]$
+\end{center}
+
+
+Boosting falls in the class of Forward Stagewise Additive models. We try to minimize the loss.
+\begin{center}
+$\underset{{(\beta_{m},\gamma_{m})}_{m=1...M}}{\text{min}}  \,\,\sum\limits_{i=1}^N L(y_{i}, \sum\limits_{m=1}^M \beta_{m}b(x_{i}, \gamma_{m}))$         
+           $and \,\,\,\forall_{m} \beta_{m}>0 $
+
+\end{center}
+
+
+where
+$b(x, \gamma_{m})$ is a classifier.
+
+
+Here we take all the classifiers to be same just for convenience of analysis. Practically we can use different types of classifiers. We will solve the above minimization problem one by one ($\beta, \gamma$) at a time. At every point 'm' we will be fitting the residual left by the previous 'm-1' classifiers.\\
+So now our objective function can be rewritten as 
+\begin{center}
+$\underset{\beta,\gamma}{\text{min}}  \,\,\, L(y_{i}, f_{m-1}(x) + \beta b(x_{i}, \gamma))$
+\end{center}
+from this we get $\beta_{m}, \gamma_{m}$. Consider the case where the loss function is a squared loss.
+\begin{center}
+$ L = \sum\limits_{i=1}^N [(y_{i} - f_{m-1}(x) - \beta b(x_{i}, \gamma))^2]$\\
+$ = \sum\limits_{i = 1}^N [(r_{im} - \beta b(x_{i}, \gamma))^2]$
+\end{center}
+where $r_{im}$ is the residual at $m^{th}$ stage.\\
+We use some different loss function for classification and it is called as adaboost.
+
+\begin{figure}
+\centering
+\includegraphics[width = 0.5\textwidth]{boosting.jpg}
+\caption{Picture showing power of boosting}
+\end{figure}
+\subsubsection*{Adaboost:-}
+Adaboost known as adaptive boosting is used for classification. Here loss function is a exponential loss function.
+\begin{center}
+$ L(y, f(x)) = exp(-yf(x))$
+\end{center}
+This is very close to logistic loss function which is $log(1 + e^{-yf(x)})$. Minimization of exponential loss is same as that of minimization of logistic loss.\\
+Weakness is important here because we are trying to fit the residual. So if weak classifier is used then we will have some residual to fit and then we can improve in stages or else we can't.\\
+\begin{center}
+$G_{m}(x)$ = $b(x, \gamma_{m})$ \\
+$(\beta_{m}, G_{m}) = argmin_{\beta, G} \sum\limits_{i=1}^N exp[-y_{i}(f_{m-1}(x_{i}) + \beta G(x_i))]$
+\end{center}
+
+$ y_{i}f_{m-1}(x_{i})$ does not have any dependence on $\beta$ and $G_{m}$. So 
+\begin{center}
+$(\beta_{m}, G_{m}) = \underset{\beta, G}{\text{argmin}} \sum\limits_{i=1}^N exp[-y_{i}f_{m-1}(x_{i})]exp[-y_{i}\beta G(x_i)]$ 
+
+$ = \underset{\beta, G}{\text{argmin}} \sum\limits_{i=1}^N w_{i}^{(m)}exp[-y_{i}\beta G(x_i)]$
+\end{center}
+where $exp[-y_{i}f_{m-1}(x_{i})]$ is the weight of the datapoint $x_{i}$ in the $m^{th}$ stage.
+
+Suppose G($x_{i}$) can get only one data point correct then which should it be? \\
+It should be the one with maximum weight from the previous stage. We have to see that the points  we classify correctly should have higher weight and the points that we classify incorrectly should have lower weight. Minimizing the weights for incorrectly classified points and maximizing the weights for the correctly classified points are same. So we try to minimize weights for incorrectly classified points.
+\begin{center}
+$G_{m}$ = $\underset{G}{\text{argmin}} \sum\limits_{i=1}^N w_{i}^{(m)} I(y_{i} \neq G(x_{i}))$
+\end{center}
+when $y_{i} = G(x_{i})$ then loss is $e^{-y_{i}\beta G(x_{i})} = e^{-\beta}$ and\\
+when $y_{i} \neq G(x_{i})$ then loss is $e^{-y_{i}\beta G(x_{i})} = e^{\beta}$\\
+So the loss is 
+\begin{center}
+$\sum\limits_{i=1}^N w_{i}^{(m)}[e^{-\beta} I(y_{i} = G(x_{i}))\, +\, e^{\beta} I(y_{i} \neq G(x_{i}))]$ 
+\end{center}
+and we want $I(y_{i} \neq G(x_{i}))$ = 1 for which weights are small. Now to find $\beta$ we minimize the weighted error
+\begin{center}
+$E \, = \,e^{-\beta}\sum w_{i}^{(m)}\, + \, e^{\beta}\sum w_{i}^{(m)}$\\.\\
+$\frac{\partial{E}}{\partial{\beta}} \, = \, -w_{c}e^{-\beta} \, + \, w_{e}e^{\beta}$
+\end{center}
+
+Now let sum of weights for which $y_{i} = G(x_{i})$ be $w_{c}$ and the sum of the weights for which $y_{i} \neq G(x_{i})$ be $w_{e}$.\\
+Equating the derivative to 0 we get 
+\begin{center}
+$\beta_{m}\, = \, \frac{1}{2}ln(\frac{w_{c}}{w_{e}})$\\
+\end{center}
+\begin{center}
+$= \frac{1}{2} ln(\frac{w \,-\,w_{e} }{w_{e}})$\\
+\end{center}
+\begin{center}
+$= \frac{1}{2} ln(\frac{1\,-\, err_{m}}{err_{m}})$
+\end{center}
+where $err_{m}\, = \,\frac{w_{e}}{w}$\\
+Putting all this together\\
+\begin{center}
+$f_{m}(x)\,=\,f_{m-1}(x)\,+\,\beta_{m}G_{m}(x)$\\
+\end{center}
+\begin{center}
+$w_{i}^{(m+1)}\,=\,w_{i}e^{-\beta_{m}y_{i}G_{m}(x_{i})}$
+\end{center}
+Data point for which lot of classifiers have difficulty to classify have higher weight and vice versa. So we are trying to get the point right for which most of the previous classifiers done wrong. We are going to resample the data set but the probability of point getting into the dataset
+\begin{center}
+p($x_{i}$ sampled in stage m) = $\frac{w_{i}^{(m)}}{w^{(m)}}$
+\end{center}
+Adaboost typically doesn't suffer from over fitting. Both errors testing and training decrease with adaboost. But after some time the decrease will be very less.
+
+\begin{figure}
+\centering
+\includegraphics[width = 0.5\textwidth]{boost.jpg}
+\caption{Picture showing errors after doing adaboost on test and train datasets}
+\end{figure}
+
+
+If classifier that we take is not weak then the weights will be very low resulting in very smaller probabilities for all points as strong classifier can classify most of the points correctly. So if we sample then we get same dataset again. So we do not get any advantage.\\
+\section{Stacking}
+Stacking involves training a learning algorithm to combine the predictions of several other learning algorithms.
+Suppose if we use different types of classifiers on same data then the errors will be correlated very less. Then combine them by voting. These type of methods are called as committee machines.
+\begin{center}
+$\hat{f}(x_{i}) \, = \, \sum\limits_{m=1}^M \,w_{m}\hat{f_{m}}(x_{i})$
+\end{center}
+and now we find the weights by
+\begin{center}
+$\hat{w} \,=\, \underset{w}{\text{argmin}}\, \sum\limits_{i=1}^N(y_{i}\,-\,\hat{f}(x_{i}))$
+\end{center}
+This is like converting $x_{i}$ to another 'm' dimensional input space. Here all features will be '+1' or '-1'. This is called as stacking. The weights can even be dependent on the inputs $x_{i}\,$ also.
+
+
+\section*{References}
+\beginrefs
+\bibentry{1}Notes taken during class
+\bibentry{2}T. Hastie, R. Tibshirani and J. Freidman, “The Elements of Statistical Learning,
+\bibentry{3}Wikipedia
+\endrefs
+
+% **** THIS ENDS THE EXAMPLES. DON'T DELETE THE FOLLOWING LINE:
+
+\end{document}
+
+
+
+
+
